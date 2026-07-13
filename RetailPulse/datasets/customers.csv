@@ -1,0 +1,501 @@
+customer_id,first_name,last_name,gender,email,phone,city,state,country,signup_date
+CUST00001,Joseph,Johnson,,joseph.johnson1@email.com,+1-450-428-3286,Seattle,wa,USA,2020-02-24
+CUST00002,Ethan,Hill,Female,ethan.hill2@email.com,+1-774-403-9928,Los Angeles,CA,USA,2023-09-15
+CUST00003,Daniel,Hall,Other,daniel.hall3@email.com,+1-548-484-3547,Tampa,FL,USA,2021-05-31
+CUST00004,Kimberly,Sharma,Unknown,kimberly.sharma4@email.com,+1-947-670-9785,Chicago,IL,USA,2020-05-26
+CUST00005,Timothy,Torres,Other,timothy.torres5@email.com,+1-921-271-1750,Fort Worth,TX,USA,2021-07-22
+CUST00006,Fatima,Green,Other,fatima.green6@email.com,+1-366-579-6820,Las Vegas,NV,USA,2021-05-08
+CUST00007,Ashley,Hernandez,Male,ashley.hernandez7@email.com,,Raleigh,NC,USA,2022-08-21
+CUST00008,Margaret,Torres,Unknown,margaret.torres8@email.com,+1-417-871-9179,Nashville,TN,USA,2023-06-09
+CUST00009,Mei,Nguyen,Unknown,mei.nguyen9@email.com,,Atlanta,GA,USA,2024-09-18
+CUST00010,Mei,Hill,Other,mei.hill10@email.com,+1-594-590-8668,Phoenix,az,USA,2024-12-07
+CUST00011,Andrew,Roberts,Unknown,invalid-email,+1-314-500-8123,Detroit,MI,USA,2020-10-09
+CUST00012,Matthew,Allen,Female,matthew.allen12@email.com,+1-840-505-9317,San Antonio,TX,USA,2021-03-25
+CUST00013,James,Hill,Other,james.hill13@email.com,+1-700-219-2832,Nashville,TN,USA,2023-01-26
+CUST00014,Noah,Chen,Unknown,noah.chen14@email.com,+1-978-745-3060,Phoenix,AZ,USA,2020-06-09
+CUST00015,Margaret,Wright,Unknown,margaret.wright15@email.com,+1-930-519-7537,Fort Worth,TX,USA,2023-03-10
+CUST00016,Robert,Nguyen,Male,robert.nguyen16@email.com,+1-802-425-1117,Charlotte,NC,USA,2019-10-18
+CUST00017,Steven,Moore,,steven.moore17@email.com,+1-419-752-3167,Kansas City,MO,USA,2025-05-27
+CUST00018,Richard,Nelson,Male,richard.nelson18@email.com,+1-562-633-7735,Tampa,FL,USA,2024-03-27
+CUST00019,Carol,Sharma,Unknown,carol.sharma19@email.com,+1-454-396-4116,San Antonio,TX,USA,2025-01-05
+CUST00020,Elizabeth,Lewis,Male,elizabeth.lewis20@email.com,+1-251-867-9856,San Antonio,TX,USA,2019-03-02
+CUST00021,Margaret,Kumar,Unknown,margaret.kumar21@email.com,+1-260-368-7209,Atlanta,GA,USA,2019-01-09
+CUST00022,Noah,Martinez,,noah.martinez22@email.com,+1-503-422-1958,Fort Worth,TX,USA,2025-06-30
+CUST00023,Daniel,Brown,Unknown,daniel.brown23@email.com,+1-390-270-2113,Philadelphia,PA,USA,2021-08-21
+CUST00024,William,Clark,Other,william.clark24@email.com,+1-467-409-6147,Nashville,TN,USA,2021-09-04
+CUST00025,Elizabeth,Smith,,elizabeth.smith25@email.com,+1-836-776-2638,Raleigh,NC,USA,2019-10-28
+CUST00026,Ashley,White,,ashley.white26@email.com,+1-361-648-9900,Denver,CO,USA,2025-13-45
+CUST00027,Kenneth,Nelson,,kenneth.nelson27@email.com,+1-337-470-2891,San Antonio,TX,USA,2020-03-14
+CUST00028,Kimberly,Allen,Other,kimberly.allen28@email.com,+1-457-252-2512,Kansas City,MO,USA,2023-10-01
+CUST00029,Daniel,Mitchell,Male,daniel.mitchell29@email.com,+1-764-922-8007,Orlando,FL,USA,2025-04-16
+CUST00030,John,Kim,Female,john.kim30@email.com,+1-796-765-3426,Las Vegas,NV,USA,2023-10-27
+CUST00031,Jennifer,Thompson,,jennifer.thompson31@email.com,+1-898-455-2684,Columbus,OH,USA,2022-12-19
+CUST00032,Steven,Kumar,Other,steven.kumar32@email.com,+1-381-622-1406,Austin,TX,USA,2021-01-04
+CUST00033,Ashley,Moore,Unknown,ashley.moore33@email.com,+1-918-310-7267,Austin,TX,USA,2019-06-08
+CUST00034,Sandra,Anderson,Other,sandra.anderson34@email.com,+1-875-397-7528,Los Angeles,CA,USA,2022-09-06
+CUST00035,Raj,Baker,,raj.baker35@email.com,+1-228-318-5279,Detroit,MI,USA,2021-01-01
+CUST00036,Kevin,Ramirez,Male,kevin.ramirez36@email.com,,San Diego,CA,USA,2021-11-09
+CUST00037,Betty,White,Male,betty.white37@email.com,+1-271-880-6409,Tampa,FL,USA,2022-07-09
+CUST00038,Raj,Hall,Unknown,raj.hall38@email.com,+1-767-330-4143,Denver,CO,USA,2023-09-19
+CUST00039,James,Martin,Unknown,james.martin39@email.com,+1-415-640-6279,Denver,CO,USA,2024-03-19
+CUST00040,Lisa,Nelson,Female,lisa.nelson40@email.com,+1-490-727-6491,Philadelphia,PA,USA,2020-01-18
+CUST00041,Ashley,Walker,Unknown,ashley.walker41@email.com,+1-666-624-4185,Phoenix,AZ,USA,2023-04-22
+CUST00042,Susan,Roberts,Male,susan.roberts42@email.com,+1-424-380-9486,Tampa,FL,USA,2024-03-17
+CUST00043,Olivia,Nelson,,olivia.nelson43@email.com,+1-973-653-9270,Nashville,TN,USA,2023-10-14
+CUST00044,Ashley,Kim,Female,ashley.kim44@email.com,+1-984-996-9540,Seattle,WA,USA,2024-06-07
+CUST00045,Kevin,Wright,Female,kevin.wright45@email.com,+1-341-354-4788,Philadelphia,PA,USA,2023-04-18
+CUST00046,Wei,Brown,Unknown,wei.brown46@email.com,+1-630-598-1320,Columbus,OH,USA,2025-06-16
+CUST00047,Wei,Wright,Unknown,wei.wright47@email.com,+1-699-424-5471,Charlotte,NC,USA,2023-11-21
+CUST00048,Lisa,Kim,Unknown,lisa.kim48@email.com,+1-330-837-9751,Raleigh,NC,USA,2019-04-21
+CUST00049,Olivia,Lopez,Unknown,olivia.lopez49@email.com,+1-466-588-6363,Houston,TX,USA,2021-05-16
+CUST00050,Wei,Taylor,Other,wei.taylor50@email.com,+1-681-219-9837,Philadelphia,PA,USA,2019-08-02
+CUST00051,Patricia,Thomas,Female,patricia.thomas51@email.com,+1-220-836-3496,Fort Worth,California,USA,2021-09-04
+CUST00052,Paul,Roberts,Other,paul.roberts52@email.com,,Las Vegas,NV,USA,2020-11-01
+CUST00053,Ronald,Sanchez,Other,ronald.sanchez53@email.com,+1-277-806-4978,Fort Worth,TX,USA,2020-02-22
+CUST00054,Jennifer,Thompson,Other,,+1-877-579-2129,Tampa,FL,USA,2024-09-03
+CUST00055,Timothy,Green,,timothy.green55@email.com,+1-924-356-8135,Raleigh,NC,USA,2020-12-22
+CUST00056,Emma,Robinson,Female,emma.robinson56@email.com,+1-948-806-5397,Tampa,FL,USA,2022-08-13
+CUST00057,Olivia,Torres,Female,olivia.torres57@email.com,+1-544-229-9098,Miami,FL,USA,2022-08-24
+CUST00058,Emily,Scott,Unknown,emily.scott58@email.com,+1-729-395-2402,New York,NY,USA,2021-09-15
+CUST00059,Noah,Lewis,Female,noah.lewis59@email.com,+1-295-501-4630,Los Angeles,CA,USA,2023-07-15
+CUST00060,Mei,Mitchell,Other,mei.mitchell60@email.com,+1-560-919-8434,Detroit,MI,USA,2022-01-14
+CUST00061,Nancy,Gonzalez,,nancy.gonzalez61@email.com,+1-956-695-5530,Columbus,OH,USA,2024-11-18
+CUST00062,Matthew,Martin,Male,matthew.martin62@email.com,+1-925-746-3073,New York,NY,USA,2022-01-28
+CUST00063,Noah,Miller,Unknown,noah.miller63@email.com,+1-787-491-8690,New York,NY,USA,2024-05-14
+CUST00064,Joseph,Chen,Male,joseph.chen64@email.com,+1-610-703-2213,Phoenix,AZ,USA,2025-06-21
+CUST00065,Ashley,Davis,Unknown,ashley.davis65@email.com,+1-820-810-4697,Minneapolis,MN,USA,2024-11-10
+CUST00066,Michelle,Torres,Female,michelle.torres66@email.com,+1-824-957-2625,Houston,TX,USA,2021-05-01
+CUST00067,Daniel,Smith,Male,daniel.smith67@email.com,+1-661-905-8699,Minneapolis,MN,USA,2022-04-07
+CUST00068,Sandra,Taylor,Female,sandra.taylor68@email.com,+1-635-317-9922,Fort Worth,TX,USA,2021-07-09
+CUST00069,Michelle,Hill,Unknown,michelle.hill69@email.com,+1-649-327-8679,Denver,CO,USA,2022-05-30
+CUST00070,Jennifer,Ali,Male,jennifer.ali70@email.com,+1-952-530-5102,Tampa,FL,USA,2019-04-16
+CUST00071,Robert,Carter,,robert.carter71@email.com,+1-790-241-3870,Seattle,WA,USA,2024-04-11
+CUST00072,Noah,Garcia,Male,noah.garcia72@email.com,+1-556-618-6460,Salt Lake City,UT,USA,2022-08-08
+CUST00073,Raj,Chen,Other,raj.chen73@email.com,+1-665-290-6153,Chicago,IL,USA,2021-10-30
+CUST00074,James,Nelson,Other,james.nelson74@email.com,+1-623-255-4073,Raleigh,NC,USA,2024-10-24
+CUST00075,Andrew,Scott,Male,andrew.scott75@email.com,+1-494-648-8941,Dallas,TX,USA,2020-05-12
+CUST00076,Mary,Scott,Male,mary.scott76@email.com,+1-295-430-2858,Minneapolis,MN,USA,2024-03-05
+CUST00077,Andrew,Clark,Female,andrew.clark77@email.com,+1-683-449-8483,Salt Lake City,UT,USA,2025-03-07
+CUST00078,David,Moore,Other,david.moore78@email.com,+1-548-719-5377,Minneapolis,MN,USA,2019-01-11
+CUST00079,Karen,Lewis,Unknown,karen.lewis79@email.com,+1-553-540-9903,Salt Lake City,UT,USA,2023-03-26
+CUST00080,Deborah,Anderson,Unknown,deborah.anderson80@email.com,+1-244-525-8749,Minneapolis,MN,USA,2023-04-11
+CUST00081,John,Rodriguez,Unknown,,+1-302-650-2633,Detroit,MI,USA,2024-11-24
+CUST00082,Elizabeth,Walker,Other,elizabeth.walker82@email.com,+1-546-838-7512,Indianapolis,IN,USA,2019-11-25
+CUST00083,Noah,Kumar,Female,noah.kumar83@email.com,+1-832-270-4846,Chicago,IL,USA,2022-03-23
+CUST00084,Richard,Lewis,Other,richard.lewis84@email.com,+1-910-506-1474,Austin,TX,USA,2019-07-08
+CUST00085,Ananya,Torres,,ananya.torres85@email.com,+1-374-379-2293,Jacksonville,FL,USA,2023-04-16
+CUST00086,Paul,Robinson,,paul.robinson86@email.com,+1-882-209-8622,Indianapolis,IN,USA,2022-03-24
+CUST00087,Mei,Hall,Unknown,mei.hall87@email.com,+1-667-509-4263,Indianapolis,IN,USA,2023-04-25
+CUST00088,Donna,Johnson,Other,donna.johnson88@email.com,+1-481-208-1803,Atlanta,GA,USA,2024-07-27
+CUST00089,Anthony,Flores,Male,anthony.flores89@email.com,+1-894-973-3240,Indianapolis,IN,USA,2020-02-02
+CUST00090,Barbara,Jackson,Female,barbara.jackson90@email.com,+1-965-625-3877,Nashville,TN,USA,2021-04-02
+CUST00091,Andrew,Kim,Male,andrew.kim91@email.com,+1-463-693-5835,Austin,TX,USA,2022-10-19
+CUST00092,Priya,Singh,,priya.singh92@email.com,+1-292-604-1228,Las Vegas,NV,USA,2021-12-19
+CUST00093,Ronald,Chen,Male,ronald.chen93@email.com,+1-310-891-4830,Las Vegas,NV,USA,2024-04-15
+CUST00094,David,Green,Female,david.green94@email.com,,Raleigh,NC,USA,2020-04-22
+CUST00095,Steven,Ali,Unknown,steven.ali95@email.com,+1-597-664-7078,Dallas,TX,USA,2025-01-21
+CUST00096,Noah,Flores,Unknown,noah.flores96@email.com,+1-486-233-7070,Minneapolis,MN,USA,2021-06-08
+CUST00097,Melissa,Wright,Male,melissa.wright97@email.com,+1-262-607-5520,Portland,OR,USA,2021-02-16
+CUST00098,Robert,Brown,,robert.brown98@email.com,+1-449-328-4362,Detroit,MI,USA,2019-10-09
+CUST00099,Christopher,Patel,Other,christopher.patel99@email.com,+1-483-348-3129,New York,NY,USA,2025-01-21
+CUST00100,Amanda,Patel,Other,amanda.patel100@email.com,+1-802-531-1258,San Francisco,CA,USA,2020-12-14
+CUST00101,Liam,Lewis,,liam.lewis101@email.com,+1-725-807-2786,Las Vegas,NV,USA,2024-01-26
+CUST00102,Kenneth,Robinson,Male,kenneth.robinson102@email.com,+1-262-690-7580,Los Angeles,CA,USA,2023-10-13
+CUST00103,Christopher,Jones,Unknown,christopher.jones103@email.com,+1-481-839-9984,Dallas,TX,USA,2022-08-24
+CUST00104,Richard,Patel,Unknown,richard.patel104@email.com,+1-870-866-4522,San Diego,CA,USA,2023-10-28
+CUST00105,Richard,Lee,Female,richard.lee105@email.com,+1-520-881-5176,Tampa,FL,USA,2023-03-14
+CUST00106,Carlos,Miller,,carlos.miller106@email.com,+1-333-769-1982,Las Vegas,NV,USA,2025-04-19
+CUST00107,Mei,Kumar,Male,mei.kumar107@email.com,+1-494-814-6119,Houston,TX,USA,2022-12-11
+CUST00108,Susan,Thompson,Female,susan.thompson108@email.com,+1-317-980-5564,Las Vegas,NV,USA,2025-06-09
+CUST00109,Patricia,Hill,Other,patricia.hill109@email.com,+1-229-384-5477,Seattle,WA,USA,2022-06-19
+CUST00110,David,Martinez,Unknown,david.martinez110@email.com,+1-293-964-9691,Los Angeles,CA,USA,2021-05-31
+CUST00111,William,Ali,Other,william.ali111@email.com,+1-359-361-1815,Houston,TX,USA,2019-12-01
+CUST00112,Margaret,Carter,,margaret.carter112@email.com,+1-553-640-2816,San Diego,CA,USA,2022-03-06
+CUST00113,Linda,Smith,Other,linda.smith113@email.com,,Columbus,OH,USA,2021-11-12
+CUST00114,Ronald,Wright,Unknown,ronald.wright114@email.com,,Charlotte,nc,USA,2019-10-23
+CUST00115,Kevin,Torres,Male,kevin.torres115@email.com,+1-787-614-7843,Tampa,FL,USA,2022-03-31
+CUST00116,Fatima,Kim,Unknown,fatima.kim116@email.com,+1-290-647-2734,Las Vegas,NV,USA,2021-09-23
+CUST00117,Carol,Anderson,Male,carol.anderson117@email.com,+1-997-372-2251,Detroit,MI,USA,2024-09-21
+CUST00118,Christopher,Thomas,,christopher.thomas118@email.com,+1-349-462-4232,San Antonio,TX,USA,2020-12-11
+CUST00119,Sophia,Robinson,Female,sophia.robinson119@email.com,+1-897-778-6295,Orlando,FL,USA,2022-07-18
+CUST00120,Linda,Thompson,Male,linda.thompson120@email.com,+1-517-672-8404,Phoenix,AZ,USA,2019-06-04
+CUST00121,Barbara,Flores,,barbara.flores121@email.com,+1-673-794-1672,Miami,FL,USA,2024-01-17
+CUST00122,Linda,Lewis,Female,linda.lewis122@email.com,+1-551-931-2381,San Antonio,TX,USA,2024-08-28
+CUST00123,Daniel,White,,daniel.white123@email.com,+1-489-596-7697,Las Vegas,NV,USA,2022-10-17
+CUST00124,Deborah,Jackson,Male,deborah.jackson124@email.com,+1-941-872-3463,Indianapolis,IN,USA,2022-09-27
+CUST00125,Priya,Rodriguez,Female,priya.rodriguez125@email.com,+1-517-772-7171,Philadelphia,PA,USA,2022-09-07
+CUST00126,Barbara,Adams,Other,barbara.adams126@email.com,+1-720-570-1298,Tampa,FL,USA,2023-01-25
+CUST00127,Donald,Rodriguez,,donald.rodriguez127@email.com,+1-279-502-2657,San Jose,CA,USA,2024-09-10
+CUST00128,Thomas,Hill,Unknown,thomas.hill128@email.com,+1-357-366-3962,Miami,FL,USA,2020-11-09
+CUST00129,Joshua,Carter,Unknown,joshua.carter129@email.com,+1-439-746-4918,Orlando,FL,USA,2022-06-21
+CUST00130,Maria,Robinson,Unknown,maria.robinson130@email.com,+1-996-591-9239,Denver,CO,USA,2024-11-30
+CUST00131,Paul,Brown,Male,paul.brown131@email.com,+1-580-767-2680,Salt Lake City,UT,USA,2024-10-14
+CUST00132,Christopher,Kim,Male,christopher.kim132@email.com,+1-293-427-8391,Tampa,FL,USA,2022-12-02
+CUST00133,William,White,Female,william.white133@email.com,+1-228-526-2623,Charlotte,NC,USA,2022-10-05
+CUST00134,Sarah,Carter,Male,sarah.carter134@email.com,+1-659-830-1086,Salt Lake City,UT,USA,2019-11-21
+CUST00135,Mei,Davis,Female,mei.davis135@email.com,+1-443-508-2996,Denver,CO,USA,2019-07-15
+CUST00136,Sophia,Hill,Other,sophia.hill136@email.com,+1-847-727-4963,Los Angeles,CA,USA,2020-08-11
+CUST00137,William,King,,william.king137@email.com,+1-269-738-9914,Las Vegas,NV,USA,2024-09-09
+CUST00138,Melissa,Taylor,Male,melissa.taylor138@email.com,+1-565-269-6649,Los Angeles,CA,USA,2021-09-14
+CUST00139,Carol,Chen,Female,carol.chen139@email.com,+1-997-901-8612,Jacksonville,FL,USA,2024-05-14
+CUST00140,Donna,Gonzalez,,donna.gonzalez140@email.com,+1-404-242-6170,Chicago,IL,USA,2022-06-24
+CUST00141,Anthony,Jackson,Male,anthony.jackson141@email.com,+1-999-248-6438,Portland,OR,USA,2022-01-24
+CUST00142,Deborah,Perez,,deborah.perez142@email.com,+1-708-908-9151,Jacksonville,FL,USA,2023-02-13
+CUST00143,Nancy,Wright,Other,nancy.wright143@email.com,+1-528-305-2311,Denver,CO,USA,2022-09-05
+CUST00144,George,Lewis,Male,george.lewis144@email.com,+1-944-561-8126,Chicago,IL,USA,2022-01-29
+CUST00145,Daniel,Johnson,Female,daniel.johnson145@email.com,+1-822-894-8179,San Jose,CA,USA,2019-05-23
+CUST00146,John,Hill,Unknown,john.hill146@email.com,+1-895-660-7077,San Jose,CA,USA,2023-03-04
+CUST00147,Emily,Thomas,,emily.thomas147@email.com,+1-226-953-4048,San Diego,CA,USA,2024-08-06
+CUST00148,Ahmed,Wilson,Female,ahmed.wilson148@email.com,+1-910-702-4279,Denver,CO,USA,2020-05-17
+CUST00149,Barbara,Sharma,,barbara.sharma149@email.com,+1-883-555-2063,Nashville,TN,USA,2025-03-02
+CUST00150,Matthew,Patel,Female,matthew.patel150@email.com,+1-720-429-2988,Las Vegas,NV,USA,2021-04-03
+CUST00151,Olivia,Sharma,Unknown,olivia.sharma151@email.com,+1-826-288-2077,Dallas,TX,USA,2022-06-20
+CUST00152,Elizabeth,Rodriguez,,elizabeth.rodriguez152@email.com,+1-857-275-8372,Nashville,TN,USA,2024-03-23
+CUST00153,Nancy,Roberts,,nancy.roberts153@email.com,+1-643-714-1907,Dallas,TX,USA,2020-05-23
+CUST00154,George,King,Other,george.king154@email.com,+1-280-456-4216,Denver,CO,USA,2025-03-06
+CUST00155,Lisa,Nguyen,Male,lisa.nguyen155@email.com,,San Jose,CA,USA,2025-04-27
+CUST00156,Kimberly,Adams,Unknown,kimberly.adams156@email.com,+1-985-785-7825,Columbus,OH,USA,2019-05-05
+CUST00157,Ashley,Sharma,Female,ashley.sharma157@email.com,+1-504-664-2195,Atlanta,GA,USA,2019-09-03
+CUST00158,Kevin,Kumar,Other,kevin.kumar158@email.com,+1-951-553-7532,Nashville,TN,USA,2020-06-19
+CUST00159,Ahmed,Thomas,,ahmed.thomas159@email.com,+1-299-251-5754,San Jose,CA,USA,2023-04-23
+CUST00160,Kevin,Gonzalez,Other,kevin.gonzalez160@email.com,+1-710-727-8648,Austin,TX,USA,2024-08-04
+CUST00161,Steven,Wilson,,steven.wilson161@email.com,+1-249-251-5609,Portland,OR,USA,2024-07-20
+CUST00162,Susan,Ramirez,Other,susan.ramirez162@email.com,+1-470-944-6992,Dallas,TX,USA,2023-07-10
+CUST00163,Joshua,Jones,Female,joshua.jones163@email.com,+1-716-661-5582,Miami,FL,USA,2020-05-01
+CUST00164,Timothy,Carter,,timothy.carter164@email.com,,San Jose,CA,USA,2023-07-03
+CUST00165,Fatima,Martinez,Unknown,fatima.martinez165@email.com,+1-535-827-6218,Dallas,TX,USA,2020-10-27
+CUST00166,Ava,Wright,Male,ava.wright166@email.com,+1-925-776-5911,Kansas City,MO,USA,2024-04-29
+CUST00167,Patricia,Hill,,patricia.hill167@email.com,+1-471-871-4728,Salt Lake City,UT,USA,2019-07-30
+CUST00168,Ronald,Martinez,Male,ronald.martinez168@email.com,+1-232-786-2800,San Francisco,CA,USA,2021-02-20
+CUST00169,Ethan,Roberts,,ethan.roberts169@email.com,+1-953-944-2020,Salt Lake City,UT,USA,2020-07-19
+CUST00170,Kevin,Lopez,Other,kevin.lopez170@email.com,+1-745-550-9950,Raleigh,NC,USA,2022-12-22
+CUST00171,Donald,Martin,Unknown,donald.martin171@email.com,+1-921-412-9011,Denver,CO,USA,2022-07-22
+CUST00172,Jessica,Torres,Male,jessica.torres172@email.com,+1-604-553-3399,Miami,FL,USA,2022-04-04
+CUST00173,Paul,Mitchell,,paul.mitchell173@email.com,+1-419-406-9824,Salt Lake City,UT,USA,2022-01-15
+CUST00174,Ashley,Brown,Unknown,ashley.brown174@email.com,+1-853-438-1860,Charlotte,NC,USA,2020-02-15
+CUST00175,Daniel,Clark,Other,daniel.clark175@email.com,+1-688-866-4267,Salt Lake City,UT,USA,2022-03-22
+CUST00176,Sandra,Wright,Unknown,sandra.wright176@email.com,+1-379-627-3880,Chicago,IL,USA,2019-05-29
+CUST00177,Donna,Ali,Other,donna.ali177@email.com,+1-209-505-2758,Chicago,IL,USA,2022-10-04
+CUST00178,Sarah,Singh,Female,sarah.singh178@email.com,+1-479-397-2845,Raleigh,NC,USA,2022-09-16
+CUST00179,Carol,Patel,,carol.patel179@email.com,+1-781-890-4164,Denver,CO,USA,2020-12-19
+CUST00180,Barbara,Sanchez,Female,,+1-389-343-8822,San Antonio,TX,USA,2022-08-18
+CUST00181,Brian,Martin,Male,brian.martin181@email.com,+1-467-869-6890,New York,NY,USA,2021-08-25
+CUST00182,Michelle,Hall,Female,michelle.hall182@email.com,+1-854-502-7021,San Diego,CA,USA,2021-06-23
+CUST00183,Melissa,Clark,,melissa.clark183@email.com,+1-975-750-4578,Salt Lake City,UT,USA,2021-10-10
+CUST00184,Elizabeth,Torres,,elizabeth.torres184@email.com,+1-263-760-9281,San Diego,CA,USA,2021-04-08
+CUST00185,Mark,Rivera,Unknown,mark.rivera185@email.com,+1-293-722-8298,Kansas City,MO,USA,2019-08-16
+CUST00186,Michelle,Campbell,,michelle.campbell186@email.com,+1-605-460-1049,Los Angeles,CA,USA,2021-06-11
+CUST00187,Linda,Jones,Female,linda.jones187@email.com,+1-232-493-7698,Salt Lake City,UT,USA,2021-01-07
+CUST00188,Ronald,Lewis,Other,ronald.lewis188@email.com,+1-584-282-9835,Miami,FL,USA,2020-06-28
+CUST00189,Donald,Kim,,donald.kim189@email.com,+1-974-223-5888,New York,NY,USA,2024-03-11
+CUST00190,Karen,Moore,Unknown,karen.moore190@email.com,+1-942-983-2848,Fort Worth,TX,USA,2019-05-12
+CUST00191,David,Miller,Male,david.miller191@email.com,+1-657-812-1797,Chicago,IL,USA,2021-09-29
+CUST00192,Linda,Rodriguez,,linda.rodriguez192@email.com,+1-439-949-6224,Denver,CO,USA,2025-06-23
+CUST00193,Donald,Clark,,donald.clark193@email.com,+1-481-262-3869,Boston,MA,USA,2023-10-16
+CUST00194,Kevin,Hall,Female,kevin.hall194@email.com,+1-618-352-5913,Minneapolis,MN,USA,2023-03-22
+CUST00195,Christopher,Sharma,,christopher.sharma195@email.com,+1-259-775-7761,Raleigh,NC,USA,2023-09-03
+CUST00196,William,Lewis,Other,william.lewis196@email.com,+1-294-748-4120,Las Vegas,NV,USA,2019-07-31
+CUST00197,Margaret,Walker,Female,margaret.walker197@email.com,+1-540-510-1251,Columbus,OH,USA,2021-05-17
+CUST00198,Ashley,Hall,Unknown,ashley.hall198@email.com,+1-606-445-6269,Columbus,OH,USA,2022-03-05
+CUST00199,Sophia,Robinson,Other,sophia.robinson199@email.com,,San Antonio,TX,USA,2021-04-12
+CUST00200,Robert,Taylor,Female,robert.taylor200@email.com,+1-502-356-4214,Minneapolis,MN,USA,2022-09-13
+CUST00201,Carol,Taylor,Female,carol.taylor201@email.com,+1-940-857-9037,Kansas City,MO,USA,2024-03-02
+CUST00202,Nancy,Ali,Male,nancy.ali202@email.com,+1-736-234-2217,Houston,TX,USA,2019-07-18
+CUST00203,Mary,Wilson,Male,,+1-582-261-8916,Raleigh,nc,USA,2024-06-21
+CUST00204,Emily,Wright,Male,emily.wright204@email.com,+1-217-714-8054,Denver,CO,USA,2021-01-04
+CUST00205,Paul,Chen,Unknown,paul.chen205@email.com,+1-473-606-2294,Portland,OR,USA,2023-03-09
+CUST00206,William,Adams,,william.adams206@email.com,+1-295-615-7213,Chicago,IL,USA,2023-03-25
+CUST00207,Carlos,Adams,Female,carlos.adams207@email.com,+1-779-297-9653,Detroit,MI,USA,2019-06-24
+CUST00208,Jennifer,Jones,Other,,+1-756-777-1539,Seattle,WA,USA,2021-01-04
+CUST00209,Priya,Jones,Unknown,priya.jones209@email.com,+1-366-777-4939,Boston,MA,USA,2025-05-10
+CUST00210,William,Allen,Male,william.allen210@email.com,+1-254-300-8161,Portland,OR,USA,2021-08-08
+CUST00211,Dorothy,Johnson,,dorothy.johnson211@email.com,+1-661-702-4737,Seattle,WA,USA,2022-12-28
+CUST00212,William,Roberts,Other,william.roberts212@email.com,+1-452-930-2204,Denver,CO,USA,2019-12-03
+CUST00213,Kevin,White,Other,kevin.white213@email.com,+1-293-205-6050,San Antonio,TX,USA,2023-12-27
+CUST00214,Ava,Clark,Male,ava.clark214@email.com,+1-226-291-6798,San Antonio,TX,USA,2025-03-20
+CUST00215,Ananya,Harris,,ananya.harris215@email.com,+1-942-772-4977,Philadelphia,PA,USA,2025-05-31
+CUST00216,Sophia,Martinez,Other,sophia.martinez216@email.com,+1-371-645-5521,Phoenix,AZ,USA,2023-09-21
+CUST00217,Sophia,Hill,Male,sophia.hill217@email.com,+1-668-309-3219,Fort Worth,TX,USA,2022-06-01
+CUST00218,Brian,Lewis,Other,brian.lewis218@email.com,+1-640-866-3230,Detroit,MI,USA,2022-05-15
+CUST00219,Priya,Lee,Female,priya.lee219@email.com,+1-952-911-9044,Denver,CO,USA,2025-06-16
+CUST00220,Betty,Nguyen,Female,betty.nguyen220@email.com,+1-898-986-1440,Jacksonville,FL,USA,2024-03-05
+CUST00221,Ananya,Baker,Other,ananya.baker221@email.com,+1-342-848-5961,Kansas City,MO,USA,2021-09-18
+CUST00222,Emma,Nguyen,Male,emma.nguyen222@email.com,+1-747-718-7853,Atlanta,GA,USA,2025-02-04
+CUST00223,William,Miller,,william.miller223@email.com,+1-873-880-6816,San Francisco,CA,USA,2020-11-12
+CUST00224,Brian,Patel,Female,brian.patel224@email.com,+1-308-210-2615,Tampa,FL,USA,2021-11-25
+CUST00225,Ahmed,White,Other,ahmed.white225@email.com,+1-674-990-9199,Atlanta,GA,USA,2020-09-09
+CUST00226,William,Davis,Female,william.davis226@email.com,+1-556-519-6620,San Jose,CA,USA,2024-02-09
+CUST00227,Ahmed,Lee,Other,ahmed.lee227@email.com,+1-507-245-2885,Phoenix,AZ,USA,2019-04-03
+CUST00228,Ashley,King,Unknown,ashley.king228@email.com,+1-765-363-6422,Jacksonville,FL,USA,2025-04-12
+CUST00229,Carlos,Sanchez,,carlos.sanchez229@email.com,,Los Angeles,CA,USA,2024-01-16
+CUST00230,David,Torres,Female,david.torres230@email.com,+1-749-391-6993,San Antonio,TX,USA,2022-08-28
+CUST00231,Kevin,Hill,Other,kevin.hill231@email.com,+1-825-601-2871,Miami,FL,USA,2022-11-26
+CUST00232,Kenneth,Flores,Female,kenneth.flores232@email.com,+1-888-337-6131,Philadelphia,PA,USA,2020-04-27
+CUST00233,Wei,Hill,Unknown,wei.hill233@email.com,+1-788-592-7931,Dallas,TX,USA,2021-01-30
+CUST00234,Lisa,Young,,lisa.young234@email.com,+1-343-391-6154,Denver,co,USA,2024-01-22
+CUST00235,Deborah,Scott,Unknown,deborah.scott235@email.com,+1-618-901-9056,Kansas City,MO,USA,2023-08-30
+CUST00236,Donna,Williams,Unknown,donna.williams236@email.com,+1-430-750-5729,Seattle,WA,USA,2020-11-19
+CUST00237,Joseph,Moore,,joseph.moore237@email.com,+1-755-974-1681,Las Vegas,NV,USA,2023-12-13
+CUST00238,Ashley,Martin,Unknown,ashley.martin238@email.com,+1-660-469-6711,Chicago,IL,USA,2019-12-23
+CUST00239,George,Kumar,Female,george.kumar239@email.com,+1-369-830-3281,Tampa,FL,USA,2021-04-26
+CUST00240,Lisa,Lee,Male,lisa.lee240@email.com,+1-496-786-5380,Denver,CO,USA,2024-10-08
+CUST00241,Emily,Kumar,Other,emily.kumar241@email.com,+1-918-335-5090,Dallas,TX,USA,2020-08-22
+CUST00242,Andrew,Green,Unknown,andrew.green242@email.com,+1-584-662-2237,Minneapolis,MN,USA,2020-01-17
+CUST00243,Noah,Lee,Other,noah.lee243@email.com,+1-992-950-2526,New York,NY,USA,2024-02-21
+CUST00244,Margaret,Young,,margaret.young244@email.com,+1-530-490-6533,Seattle,WA,USA,2025-02-19
+CUST00245,Michael,Williams,Female,michael.williams245@email.com,,San Antonio,TX,USA,2020-05-23
+CUST00246,Thomas,Ali,Other,thomas.ali246@email.com,+1-362-480-2529,Boston,MA,USA,2023-01-16
+CUST00247,Michelle,Campbell,Male,michelle.campbell247@email.com,+1-639-871-2494,Charlotte,NC,USA,2020-01-25
+CUST00248,Maria,Smith,Female,maria.smith248@email.com,+1-912-551-2975,New York,NY,USA,2023-09-26
+CUST00249,Susan,Lee,Female,susan.lee249@email.com,+1-506-340-7270,Las Vegas,NV,USA,2020-06-29
+CUST00250,George,Campbell,,george.campbell250@email.com,+1-843-966-3480,Columbus,OH,USA,2023-08-14
+CUST00251,Jessica,Nguyen,Female,jessica.nguyen251@email.com,+1-559-639-6152,Miami,FL,USA,2020-07-26
+CUST00252,Joshua,Roberts,,joshua.roberts252@email.com,+1-874-508-4366,Los Angeles,CA,USA,2024-10-21
+CUST00253,Steven,Young,,steven.young253@email.com,,Miami,FL,USA,2019-10-18
+CUST00254,Deborah,Kumar,Male,,+1-574-759-3830,Minneapolis,MN,USA,2024-04-13
+CUST00255,Linda,Patel,Unknown,linda.patel255@email.com,+1-718-493-9209,Atlanta,GA,USA,2023-08-29
+CUST00256,Emily,Garcia,,emily.garcia256@email.com,+1-280-723-4329,Boston,MA,USA,2020-09-28
+CUST00257,David,Martin,Male,david.martin257@email.com,+1-947-444-1948,Tampa,FL,USA,2021-09-28
+CUST00258,Matthew,Davis,Unknown,matthew.davis258@email.com,+1-924-340-1185,New York,NY,USA,2020-11-02
+CUST00259,Lisa,White,Male,lisa.white259@email.com,+1-967-999-5403,Dallas,TX,USA,2020-04-28
+CUST00260,Elizabeth,Young,,elizabeth.young260@email.com,+1-723-568-1908,Raleigh,NC,USA,2024-08-08
+CUST00261,Joseph,Anderson,Unknown,joseph.anderson261@email.com,+1-245-212-5006,New York,NY,USA,2019-07-08
+CUST00262,John,Scott,Other,john.scott262@email.com,+1-429-529-5067,Minneapolis,MN,USA,2023-09-01
+CUST00263,Michael,Lopez,Unknown,michael.lopez263@email.com,+1-728-247-7568,Charlotte,NC,USA,2019-10-10
+CUST00264,Fatima,Smith,Unknown,fatima.smith264@email.com,+1-405-498-5979,Las Vegas,NV,USA,2021-09-20
+CUST00265,Ashley,Martinez,Other,ashley.martinez265@email.com,+1-619-224-4817,New York,ny,USA,2025-01-27
+CUST00266,Ronald,Singh,Unknown,ronald.singh266@email.com,+1-306-410-9680,Boston,MA,USA,2021-09-02
+CUST00267,Barbara,Williams,Male,barbara.williams267@email.com,+1-732-622-7102,Charlotte,NC,USA,2024-02-21
+CUST00268,Linda,Ramirez,Unknown,linda.ramirez268@email.com,+1-442-498-5276,Dallas,TX,USA,2022-07-14
+CUST00269,Elizabeth,Gonzalez,Male,elizabeth.gonzalez269@email.com,+1-998-988-2785,Dallas,TX,USA,2020-09-28
+CUST00270,Mark,Lewis,Female,mark.lewis270@email.com,+1-674-471-2964,Boston,MA,USA,2020-01-06
+CUST00271,Margaret,Kim,Unknown,margaret.kim271@email.com,+1-351-293-5066,Nashville,TN,USA,2022-12-28
+CUST00272,Patricia,Sanchez,Unknown,patricia.sanchez272@email.com,+1-769-966-5093,Orlando,FL,USA,2020-01-23
+CUST00273,Donald,Rodriguez,Male,donald.rodriguez273@email.com,+1-610-581-2376,Fort Worth,TX,USA,2021-11-26
+CUST00274,Thomas,Garcia,Female,thomas.garcia274@email.com,+1-325-243-8552,Detroit,MI,USA,2019-07-27
+CUST00275,Ronald,Baker,Other,ronald.baker275@email.com,+1-376-562-4517,Tampa,FL,USA,2021-02-05
+CUST00276,Ashley,Adams,Male,ashley.adams276@email.com,+1-710-621-8848,Denver,CO,USA,2019-09-07
+CUST00277,Ashley,Green,,ashley.green277@email.com,+1-591-930-6883,Los Angeles,CA,USA,2024-05-18
+CUST00278,Andrew,Lopez,Other,andrew.lopez278@email.com,+1-526-811-4588,Los Angeles,CA,USA,2019-05-01
+CUST00279,Sandra,Hernandez,,sandra.hernandez279@email.com,+1-453-872-4951,San Antonio,TX,USA,2021-12-27
+CUST00280,Donald,Torres,,donald.torres280@email.com,+1-563-377-3885,Miami,FL,USA,2021-08-26
+CUST00281,Amanda,Torres,Other,amanda.torres281@email.com,,San Jose,CA,USA,2025-01-29
+CUST00282,Robert,King,Other,robert.king282@email.com,+1-200-539-4300,Salt Lake City,UT,USA,2020-06-18
+CUST00283,Robert,Martinez,Male,robert.martinez283@email.com,+1-992-313-9622,San Jose,CA,USA,2023-02-03
+CUST00284,Kenneth,Lee,Other,kenneth.lee284@email.com,+1-361-949-8157,Dallas,TX,USA,2024-06-18
+CUST00285,Amanda,Anderson,Female,amanda.anderson285@email.com,+1-587-514-5825,Jacksonville,FL,USA,2020-06-05
+CUST00286,John,Lopez,Female,john.lopez286@email.com,+1-826-426-2705,Nashville,TN,USA,2024-07-25
+CUST00287,Barbara,Chen,Female,barbara.chen287@email.com,+1-657-211-5345,Detroit,MI,USA,2021-05-08
+CUST00288,Michael,Harris,Unknown,michael.harris288@email.com,+1-950-629-3725,Orlando,FL,USA,2023-08-23
+CUST00289,Donald,Hernandez,Other,donald.hernandez289@email.com,+1-275-234-5831,Orlando,FL,USA,2019-03-24
+CUST00290,Daniel,Campbell,Male,daniel.campbell290@email.com,+1-760-295-6536,Phoenix,AZ,USA,2024-05-31
+CUST00291,Michael,Miller,,michael.miller291@email.com,+1-410-394-7705,Detroit,MI,USA,2025-03-19
+CUST00292,Noah,Martinez,Other,noah.martinez292@email.com,+1-569-203-8005,Houston,TX,USA,2019-12-25
+CUST00293,Mark,Hernandez,Unknown,mark.hernandez293@email.com,+1-283-684-2892,Denver,CO,USA,2022-06-17
+CUST00294,Deborah,Lopez,Male,deborah.lopez294@email.com,+1-590-578-4056,Las Vegas,NV,USA,2023-12-31
+CUST00295,Linda,Martinez,Unknown,linda.martinez295@email.com,+1-287-884-6632,San Antonio,TX,USA,2025-01-26
+CUST00296,Wei,Wright,Male,wei.wright296@email.com,+1-786-441-8803,Salt Lake City,UT,USA,2022-05-09
+CUST00297,Christopher,Davis,Female,christopher.davis297@email.com,+1-377-371-4471,Orlando,FL,USA,2021-02-28
+CUST00298,Christopher,Kim,Unknown,christopher.kim298@email.com,+1-527-944-2097,Indianapolis,IN,USA,2019-12-23
+CUST00299,Mary,Patel,,mary.patel299@email.com,+1-315-624-3451,Minneapolis,MN,USA,2020-08-30
+CUST00300,Richard,Patel,Unknown,richard.patel300@email.com,+1-748-552-7732,Denver,CO,USA,2021-12-17
+CUST00301,Raj,Martinez,Male,raj.martinez301@email.com,+1-239-605-6431,Atlanta,GA,USA,2021-08-31
+CUST00302,Kenneth,Martin,Female,kenneth.martin302@email.com,+1-703-912-2609,Seattle,WA,USA,2021-07-22
+CUST00303,Wei,Hill,Unknown,wei.hill303@email.com,+1-392-652-4463,Philadelphia,PA,USA,2023-07-26
+CUST00304,Daniel,Jones,,daniel.jones304@email.com,,Boston,MA,USA,2020-07-09
+CUST00305,Linda,Thomas,Other,linda.thomas305@email.com,+1-667-251-6904,Chicago,IL,USA,2021-03-26
+CUST00306,Patricia,Thomas,Unknown,patricia.thomas306@email.com,+1-700-808-8308,Las Vegas,NV,USA,2020-12-28
+CUST00307,Barbara,Jackson,Female,barbara.jackson307@email.com,+1-595-250-3669,Los Angeles,CA,USA,2025-06-01
+CUST00308,Ananya,Allen,Female,ananya.allen308@email.com,+1-999-985-1145,Los Angeles,ca,USA,2024-04-25
+CUST00309,Michelle,Rivera,Other,michelle.rivera309@email.com,+1-633-585-6713,Seattle,WA,USA,2024-02-24
+CUST00310,Susan,Smith,Male,susan.smith310@email.com,+1-774-862-5631,Las Vegas,NV,USA,2022-05-07
+CUST00311,Emily,Taylor,Male,emily.taylor311@email.com,+1-392-353-9475,Boston,MA,USA,2021-09-11
+CUST00312,Sarah,Campbell,Unknown,sarah.campbell312@email.com,+1-871-709-5843,Los Angeles,CA,USA,2021-11-28
+CUST00313,Anthony,Perez,,anthony.perez313@email.com,+1-902-747-8794,Charlotte,NC,USA,2023-01-08
+CUST00314,Donna,Miller,Female,donna.miller314@email.com,+1-331-958-5237,Salt Lake City,UT,USA,2025-04-08
+CUST00315,Donald,Mitchell,,donald.mitchell315@email.com,+1-630-539-7089,Boston,MA,USA,2021-12-03
+CUST00316,Elizabeth,Walker,Other,elizabeth.walker316@email.com,+1-712-322-7253,Fort Worth,TX,USA,2024-12-10
+CUST00317,Carol,Clark,Unknown,carol.clark317@email.com,+1-346-523-3954,Raleigh,NC,USA,2019-11-28
+CUST00318,Ahmed,Moore,Female,ahmed.moore318@email.com,+1-979-992-3762,Columbus,OH,USA,2025-06-18
+CUST00319,Mei,Sanchez,,mei.sanchez319@email.com,+1-688-592-1076,Tampa,fl,USA,2019-06-04
+CUST00320,Anthony,Johnson,Other,anthony.johnson320@email.com,+1-841-951-5076,New York,NY,USA,2021-07-15
+CUST00321,David,Chen,,david.chen321@email.com,+1-505-497-8469,Chicago,IL,USA,2024-11-01
+CUST00322,Noah,Thompson,Female,noah.thompson322@email.com,+1-368-613-1313,Fort Worth,TX,USA,2021-07-24
+CUST00323,Lisa,Davis,Other,lisa.davis323@email.com,+1-928-866-1612,Las Vegas,NV,USA,2023-03-17
+CUST00324,Susan,Adams,Unknown,susan.adams324@email.com,+1-249-906-2897,Los Angeles,CA,USA,2023-09-04
+CUST00325,Mary,Martin,,mary.martin325@email.com,+1-877-303-9524,Minneapolis,MN,USA,2022-01-10
+CUST00326,Jessica,Jackson,Other,jessica.jackson326@email.com,+1-308-709-4254,San Diego,CA,USA,2021-03-29
+CUST00327,Daniel,Williams,Female,,+1-412-904-8875,Kansas City,MO,USA,2022-09-16
+CUST00328,Sophia,Martinez,Other,sophia.martinez328@email.com,+1-998-723-2229,Philadelphia,PA,USA,2020-02-19
+CUST00329,Michael,Miller,Unknown,michael.miller329@email.com,+1-240-497-6901,Jacksonville,FL,USA,2022-07-04
+CUST00330,Sarah,Nelson,Male,sarah.nelson330@email.com,+1-536-566-8171,Austin,TX,USA,2022-01-03
+CUST00331,Fatima,Moore,Male,fatima.moore331@email.com,+1-906-689-7909,Miami,FL,USA,2020-11-14
+CUST00332,Susan,Clark,,susan.clark332@email.com,+1-782-894-8178,Salt Lake City,ut,USA,2021-01-12
+CUST00333,Thomas,Walker,Male,thomas.walker333@email.com,+1-315-621-8220,Kansas City,MO,USA,2019-07-08
+CUST00334,Donald,Nelson,Female,donald.nelson334@email.com,+1-731-735-2560,Detroit,MI,USA,2023-11-08
+CUST00335,Michael,Smith,Male,michael.smith335@email.com,+1-717-680-9123,Austin,TX,USA,2020-11-08
+CUST00336,Ethan,Anderson,Unknown,ethan.anderson336@email.com,+1-612-440-2291,Miami,FL,USA,2024-02-24
+CUST00337,Jessica,Young,,jessica.young337@email.com,+1-305-613-7755,Los Angeles,CA,USA,2019-05-27
+CUST00338,Kenneth,Ali,Other,kenneth.ali338@email.com,+1-870-887-8474,Columbus,OH,USA,2022-10-28
+CUST00339,Liam,Rivera,Female,,+1-933-663-2868,Las Vegas,NV,USA,2020-02-04
+CUST00340,Melissa,Hall,Unknown,melissa.hall340@email.com,+1-246-368-9067,San Antonio,TX,USA,2020-07-29
+CUST00341,Priya,Wilson,Unknown,priya.wilson341@email.com,+1-395-933-6536,Raleigh,NC,USA,2020-03-17
+CUST00342,Ahmed,Robinson,,ahmed.robinson342@email.com,+1-710-204-9689,Dallas,TX,USA,2019-07-18
+CUST00343,Matthew,Hall,,matthew.hall343@email.com,+1-948-331-2696,Jacksonville,FL,USA,2023-05-06
+CUST00344,Ashley,Moore,Female,ashley.moore344@email.com,+1-551-501-8419,Atlanta,GA,USA,2020-06-30
+CUST00345,Kevin,Rivera,Female,kevin.rivera345@email.com,+1-405-414-5760,Columbus,OH,USA,2022-11-15
+CUST00346,Dorothy,Rivera,Unknown,dorothy.rivera346@email.com,+1-979-560-8870,San Diego,CA,USA,2025-05-26
+CUST00347,Mei,Sharma,Female,mei.sharma347@email.com,+1-735-309-1414,New York,NY,USA,2023-04-10
+CUST00348,Joshua,Baker,,joshua.baker348@email.com,+1-349-263-5835,Indianapolis,IN,USA,2021-04-15
+CUST00349,Donald,Mitchell,Unknown,donald.mitchell349@email.com,+1-443-723-5712,Miami,FL,USA,2019-07-12
+CUST00350,Michael,Smith,Other,michael.smith350@email.com,+1-407-835-8259,Indianapolis,IN,USA,2021-07-12
+CUST00351,Anthony,Jackson,Female,anthony.jackson351@email.com,+1-381-899-2220,Orlando,FL,USA,2021-02-04
+CUST00352,Kimberly,Rodriguez,Unknown,kimberly.rodriguez352@email.com,+1-798-461-1092,Austin,TX,USA,2022-09-15
+CUST00353,Michael,Roberts,Other,michael.roberts353@email.com,+1-702-786-6866,Boston,MA,USA,2019-10-26
+CUST00354,Daniel,Clark,Other,daniel.clark354@email.com,+1-294-557-4624,Atlanta,GA,USA,2021-05-23
+CUST00355,Liam,Scott,Female,liam.scott355@email.com,+1-317-884-6668,New York,NY,USA,2023-12-31
+CUST00356,Dorothy,Harris,Male,dorothy.harris356@email.com,+1-595-462-9851,San Diego,CA,USA,2022-03-04
+CUST00357,Ahmed,Young,,ahmed.young357@email.com,+1-503-867-4154,Chicago,IL,USA,2022-08-05
+CUST00358,James,Green,Male,james.green358@email.com,+1-415-886-4492,Phoenix,AZ,USA,2023-10-04
+CUST00359,Carlos,Adams,Unknown,carlos.adams359@email.com,,Phoenix,AZ,USA,2019-04-08
+CUST00360,Paul,Scott,Unknown,paul.scott360@email.com,+1-788-433-5237,Phoenix,AZ,USA,2023-07-28
+CUST00361,Jessica,Wright,Male,jessica.wright361@email.com,+1-856-937-2036,New York,NY,USA,2019-07-06
+CUST00362,Barbara,Jackson,Female,barbara.jackson362@email.com,+1-590-604-1504,Orlando,FL,USA,2024-04-25
+CUST00363,Donna,Green,,donna.green363@email.com,+1-505-893-7113,San Jose,CA,USA,2019-02-15
+CUST00364,Priya,Wright,Unknown,priya.wright364@email.com,+1-512-415-6633,Philadelphia,PA,USA,2021-05-17
+CUST00365,Paul,Gonzalez,Unknown,paul.gonzalez365@email.com,+1-385-887-1891,San Diego,CA,USA,2025-02-26
+CUST00366,Betty,Campbell,Male,betty.campbell366@email.com,+1-538-565-3100,Kansas City,MO,USA,2021-08-18
+CUST00367,Brian,Flores,,brian.flores367@email.com,+1-910-798-3496,Boston,MA,,2025-05-05
+CUST00368,Ashley,Patel,Other,ashley.patel368@email.com,+1-929-957-8145,Charlotte,NC,USA,2022-02-07
+CUST00369,Amanda,Roberts,,amanda.roberts369@email.com,+1-698-764-2783,Boston,MA,USA,2020-12-20
+CUST00370,Betty,Taylor,Male,betty.taylor370@email.com,+1-944-277-1305,Phoenix,AZ,USA,2024-09-08
+CUST00371,John,Scott,Other,john.scott371@email.com,+1-756-752-8734,Indianapolis,IN,USA,2020-08-31
+CUST00372,Sarah,Robinson,Female,sarah.robinson372@email.com,+1-606-572-9227,Philadelphia,PA,USA,2019-02-13
+CUST00373,Ava,Rodriguez,Other,ava.rodriguez373@email.com,+1-363-383-3395,Orlando,FL,USA,2024-06-03
+CUST00374,Sandra,Williams,Unknown,sandra.williams374@email.com,,Columbus,OH,USA,2024-04-07
+CUST00375,Emily,Kim,Unknown,emily.kim375@email.com,+1-792-757-3848,Indianapolis,IN,USA,2023-03-23
+CUST00376,Ronald,Anderson,,,+1-561-553-8976,Atlanta,GA,USA,2024-05-28
+CUST00377,Ava,Adams,Other,ava.adams377@email.com,+1-416-353-4062,Seattle,WA,USA,2020-10-06
+CUST00378,Brian,Campbell,Female,brian.campbell378@email.com,+1-693-891-8844,San Diego,CA,USA,2024-05-16
+CUST00379,Thomas,Torres,,thomas.torres379@email.com,+1-337-844-9399,Austin,TX,USA,2019-06-10
+CUST00380,Raj,Hill,Female,raj.hill380@email.com,+1-936-945-5644,Los Angeles,CA,USA,2019-12-18
+CUST00381,Ananya,Hill,Other,ananya.hill381@email.com,+1-796-985-3979,San Jose,CA,USA,2024-09-23
+CUST00382,David,Anderson,Female,david.anderson382@email.com,+1-594-335-2778,Miami,FL,USA,2019-03-09
+CUST00383,Richard,Lopez,,richard.lopez383@email.com,+1-829-814-1639,Salt Lake City,UT,USA,2024-12-16
+CUST00384,James,Roberts,,james.roberts384@email.com,+1-734-630-7068,Tampa,FL,USA,2019-06-27
+CUST00385,George,Nguyen,Female,george.nguyen385@email.com,+1-635-337-5170,San Antonio,TX,USA,2024-05-08
+CUST00386,Paul,Gonzalez,,paul.gonzalez386@email.com,,New York,NY,USA,2025-06-25
+CUST00387,Kevin,Clark,Other,kevin.clark387@email.com,+1-309-358-7980,Las Vegas,NV,USA,2021-11-04
+CUST00388,Priya,Carter,Other,priya.carter388@email.com,+1-623-765-8904,Columbus,OH,USA,2021-01-02
+CUST00389,Priya,Mitchell,Female,priya.mitchell389@email.com,+1-875-321-4764,Dallas,TX,USA,2024-01-04
+CUST00390,Michael,Hernandez,Unknown,michael.hernandez390@email.com,+1-851-205-2492,Miami,FL,USA,2020-08-18
+CUST00391,William,Hill,Other,william.hill391@email.com,+1-941-593-7564,Chicago,IL,USA,2024-11-04
+CUST00392,Sophia,Lewis,Female,sophia.lewis392@email.com,+1-406-872-9489,New York,NY,USA,2022-03-17
+CUST00393,Lisa,Baker,Male,lisa.baker393@email.com,+1-568-444-1004,Chicago,IL,USA,2020-10-06
+CUST00394,Betty,King,,betty.king394@email.com,+1-954-920-2124,New York,NY,USA,2020-01-05
+CUST00395,Emily,Anderson,Female,emily.anderson395@email.com,+1-665-613-1076,Fort Worth,TX,USA,2021-12-05
+CUST00396,Joseph,Sharma,Unknown,joseph.sharma396@email.com,+1-750-788-5098,Indianapolis,IN,USA,2023-12-19
+CUST00397,Fatima,Baker,Other,fatima.baker397@email.com,+1-800-228-8896,Raleigh,NC,USA,2020-04-21
+CUST00398,Sandra,Sharma,Male,sandra.sharma398@email.com,+1-622-561-9462,Nashville,TN,USA,2025-01-03
+CUST00399,Carol,Jones,,carol.jones399@email.com,+1-687-521-6792,Jacksonville,FL,USA,2021-06-14
+CUST00400,Sophia,Mitchell,Female,sophia.mitchell400@email.com,+1-440-953-4965,Fort Worth,TX,USA,2021-12-23
+CUST00401,Susan,Davis,,susan.davis401@email.com,+1-892-879-9071,Philadelphia,PA,USA,2019-01-28
+CUST00402,Emily,Young,Female,emily.young402@email.com,+1-982-723-5591,Jacksonville,FL,USA,2023-06-18
+CUST00403,John,Allen,Male,john.allen403@email.com,+1-603-902-3863,Portland,OR,USA,2024-02-16
+CUST00404,Mark,Harris,,mark.harris404@email.com,+1-533-570-5254,San Antonio,TX,USA,2021-02-05
+CUST00405,Nancy,Young,Unknown,nancy.young405@email.com,+1-415-629-7099,Tampa,FL,USA,2023-02-04
+CUST00406,Sandra,Chen,Unknown,sandra.chen406@email.com,+1-938-476-4863,San Antonio,TX,USA,2025-03-24
+CUST00407,Liam,Sharma,,liam.sharma407@email.com,+1-380-631-9185,New York,NY,USA,2020-07-04
+CUST00408,Michael,Sanchez,Other,michael.sanchez408@email.com,+1-907-367-1983,San Antonio,TX,USA,2021-06-01
+CUST00409,Timothy,White,Other,timothy.white409@email.com,+1-552-220-7746,Indianapolis,IN,USA,2020-05-11
+CUST00410,Matthew,Roberts,Unknown,matthew.roberts410@email.com,+1-563-532-9363,Denver,CO,USA,2024-06-19
+CUST00411,Christopher,Kumar,Unknown,christopher.kumar411@email.com,+1-855-545-7911,Austin,TX,USA,2025-05-30
+CUST00412,Kevin,Adams,Unknown,kevin.adams412@email.com,+1-927-473-7479,Denver,CO,USA,2022-01-16
+CUST00413,Ahmed,Clark,Other,ahmed.clark413@email.com,+1-388-223-3048,Austin,TX,USA,2021-08-19
+CUST00414,Susan,Miller,Unknown,susan.miller414@email.com,+1-684-761-1881,Phoenix,AZ,USA,2019-04-18
+CUST00415,William,Adams,Unknown,william.adams415@email.com,+1-516-434-5053,Miami,FL,USA,2022-03-09
+CUST00416,Amanda,Kumar,,amanda.kumar416@email.com,+1-687-678-9856,Nashville,TN,USA,2022-01-20
+CUST00417,Fatima,Green,Other,fatima.green417@email.com,+1-736-855-9745,Tampa,FL,USA,2022-06-22
+CUST00418,Ananya,Taylor,Female,ananya.taylor418@email.com,+1-510-210-1001,San Jose,ca,USA,2024-11-13
+CUST00419,Emma,Martin,Male,emma.martin419@email.com,+1-984-640-5799,New York,NY,USA,2021-08-05
+CUST00420,Ashley,Hernandez,Unknown,ashley.hernandez420@email.com,+1-587-425-5308,Miami,FL,USA,2019-11-21
+CUST00421,Andrew,Jackson,Female,andrew.jackson421@email.com,+1-622-392-2121,Seattle,WA,USA,2021-01-17
+CUST00422,Noah,Gonzalez,Male,noah.gonzalez422@email.com,+1-219-355-1813,Nashville,TN,USA,2024-12-31
+CUST00423,Mary,Anderson,Other,mary.anderson423@email.com,+1-354-215-9086,Philadelphia,PA,USA,2021-06-08
+CUST00424,John,Perez,Unknown,john.perez424@email.com,+1-968-349-1918,Philadelphia,PA,USA,2021-12-27
+CUST00425,Ronald,Kim,Unknown,ronald.kim425@email.com,+1-324-986-5078,New York,NY,USA,2023-04-26
+CUST00426,Richard,King,Female,richard.king426@email.com,,Columbus,OH,USA,2022-08-16
+CUST00427,Paul,Walker,Male,paul.walker427@email.com,+1-403-569-1853,Boston,ma,USA,2021-06-11
+CUST00428,Jessica,Sanchez,Other,jessica.sanchez428@email.com,+1-209-243-8786,San Francisco,CA,USA,2020-09-26
+CUST00429,Carol,Carter,Male,carol.carter429@email.com,+1-261-564-3521,Houston,TX,USA,2025-01-05
+CUST00430,George,Sharma,Other,george.sharma430@email.com,+1-950-397-1349,Orlando,FL,USA,2023-03-28
+CUST00431,Donna,Wright,Other,donna.wright431@email.com,+1-394-780-4057,Kansas City,MO,USA,2025-02-04
+CUST00432,Daniel,Jones,Other,daniel.jones432@email.com,+1-660-502-5314,San Jose,CA,USA,2025-01-27
+CUST00433,Robert,Flores,Male,robert.flores433@email.com,+1-994-835-4912,Las Vegas,NV,USA,2022-08-06
+CUST00434,Sophia,Roberts,Other,sophia.roberts434@email.com,+1-827-489-6285,San Jose,CA,USA,2023-08-06
+CUST00435,Thomas,Lopez,Male,thomas.lopez435@email.com,+1-406-309-8952,Chicago,IL,USA,2021-02-23
+CUST00436,Paul,Brown,Female,paul.brown436@email.com,+1-426-820-2161,Las Vegas,NV,USA,2019-02-23
+CUST00437,Linda,White,,linda.white437@email.com,+1-577-925-1955,Minneapolis,MN,USA,2021-12-24
+CUST00438,Richard,Miller,,richard.miller438@email.com,+1-744-594-4104,Charlotte,NC,USA,2021-03-02
+CUST00439,Wei,Mitchell,Unknown,wei.mitchell439@email.com,+1-984-853-6864,San Antonio,TX,USA,2024-02-22
+CUST00440,Carol,Nelson,Other,carol.nelson440@email.com,+1-746-814-8258,Austin,TX,USA,2022-12-14
+CUST00441,Carlos,Chen,Unknown,carlos.chen441@email.com,+1-823-446-9939,Nashville,TN,USA,2021-05-26
+CUST00442,Ahmed,Sanchez,,ahmed.sanchez442@email.com,+1-943-235-5660,New York,ny,USA,2019-03-08
+CUST00443,Margaret,Singh,,margaret.singh443@email.com,+1-222-990-5521,Nashville,TN,USA,2025-03-17
+CUST00444,Amanda,Martinez,Other,amanda.martinez444@email.com,+1-471-575-5093,Dallas,TX,USA,2021-08-12
+CUST00445,Elizabeth,Campbell,Male,elizabeth.campbell445@email.com,+1-694-377-8999,Nashville,TN,USA,2025-06-18
+CUST00446,William,Roberts,Unknown,william.roberts446@email.com,+1-989-542-6700,Houston,TX,USA,2023-11-14
+CUST00447,Mary,Green,Other,mary.green447@email.com,+1-255-512-9591,Miami,FL,USA,2019-06-18
+CUST00448,Michael,Baker,Female,michael.baker448@email.com,+1-656-970-9269,Atlanta,GA,USA,2020-01-04
+CUST00449,Liam,Torres,Unknown,liam.torres449@email.com,+1-761-608-5301,Houston,TX,USA,2019-12-15
+CUST00450,Betty,Young,,betty.young450@email.com,+1-867-785-4212,Atlanta,GA,USA,2025-04-17
+CUST00451,Carlos,Lee,Other,carlos.lee451@email.com,+1-315-887-7776,Philadelphia,PA,USA,2023-10-01
+CUST00452,Michelle,Hernandez,Male,michelle.hernandez452@email.com,+1-831-652-3389,Portland,OR,USA,2023-12-10
+CUST00453,William,Davis,Male,william.davis453@email.com,+1-448-835-3419,Houston,TX,USA,2022-03-24
+CUST00454,Brian,Wilson,,brian.wilson454@email.com,+1-408-759-9573,Columbus,OH,USA,2021-11-25
+CUST00455,Robert,Harris,Female,robert.harris455@email.com,+1-461-374-1984,Chicago,IL,USA,2022-03-09
+CUST00456,Mary,Jones,Male,mary.jones456@email.com,+1-876-477-6901,Miami,FL,USA,2020-03-17
+CUST00457,Ava,Rivera,Female,ava.rivera457@email.com,+1-523-696-9709,San Antonio,TX,USA,2019-12-27
+CUST00458,Jennifer,Thomas,Male,jennifer.thomas458@email.com,+1-541-701-7445,Boston,MA,USA,2020-10-05
+CUST00459,Ethan,Moore,,ethan.moore459@email.com,+1-840-463-7343,Houston,TX,USA,2019-05-01
+CUST00460,Sarah,Garcia,Female,sarah.garcia460@email.com,+1-733-894-4726,Miami,FL,USA,2023-09-06
+CUST00461,Ahmed,Wright,Female,ahmed.wright461@email.com,+1-411-868-3270,Dallas,TX,USA,2025-01-26
+CUST00462,Sarah,Ramirez,Male,sarah.ramirez462@email.com,+1-871-778-3589,San Jose,CA,USA,2022-07-24
+CUST00463,Christopher,Campbell,Other,christopher.campbell463@email.com,+1-983-526-7783,Los Angeles,CA,USA,2023-08-12
+CUST00464,Emily,Martinez,,emily.martinez464@email.com,+1-309-334-4026,Fort Worth,TX,USA,2019-04-18
+CUST00465,Sandra,Baker,,sandra.baker465@email.com,+1-567-281-8808,Los Angeles,CA,USA,2020-07-03
+CUST00466,Deborah,Young,Male,deborah.young466@email.com,+1-340-367-4166,Salt Lake City,UT,USA,2021-07-15
+CUST00467,Donald,Mitchell,Unknown,donald.mitchell467@email.com,+1-975-409-2083,Fort Worth,TX,USA,2020-12-26
+CUST00468,Ashley,Ramirez,Unknown,ashley.ramirez468@email.com,+1-994-242-7232,Atlanta,GA,USA,2022-07-05
+CUST00469,John,King,,john.king469@email.com,+1-662-667-1694,San Antonio,TX,USA,2021-10-03
+CUST00470,Michael,Gonzalez,Unknown,michael.gonzalez470@email.com,+1-650-607-5989,Denver,CO,USA,2022-03-17
+CUST00471,Christopher,Robinson,Female,christopher.robinson471@email.com,+1-292-939-9202,Orlando,FL,USA,2020-04-08
+CUST00472,Ananya,Lee,Unknown,ananya.lee472@email.com,+1-225-383-8433,Orlando,FL,USA,2021-04-07
+CUST00473,Daniel,Rivera,Male,daniel.rivera473@email.com,+1-293-316-8362,San Diego,CA,USA,2023-01-26
+CUST00474,Daniel,Harris,,daniel.harris474@email.com,+1-244-986-3799,Miami,FL,USA,2022-10-04
+CUST00475,Michael,Clark,Female,michael.clark475@email.com,+1-516-947-8311,Boston,MA,USA,2022-03-28
+CUST00476,Paul,Smith,,paul.smith476@email.com,+1-709-710-9904,Raleigh,NC,USA,2019-01-24
+CUST00477,Ananya,Lewis,,ananya.lewis477@email.com,+1-815-814-1107,Philadelphia,PA,USA,2021-09-29
+CUST00478,Nancy,Martinez,Male,nancy.martinez478@email.com,+1-868-557-1601,Houston,TX,USA,2020-08-18
+CUST00479,Michael,Miller,,michael.miller479@email.com,+1-382-365-5659,Minneapolis,MN,USA,2025-06-02
+CUST00480,Barbara,Roberts,Unknown,barbara.roberts480@email.com,+1-530-577-7208,Boston,MA,USA,2019-10-05
+CUST00481,Emily,Perez,Male,emily.perez481@email.com,+1-737-414-4425,Minneapolis,MN,USA,2019-08-27
+CUST00482,Joshua,Ramirez,,joshua.ramirez482@email.com,+1-465-738-6797,Nashville,TN,USA,2020-06-15
+CUST00483,Nancy,Ali,Male,nancy.ali483@email.com,+1-925-497-4171,Charlotte,NC,USA,2019-01-07
+CUST00484,Wei,Clark,Female,wei.clark484@email.com,+1-541-558-4478,Chicago,IL,USA,2019-02-16
+CUST00485,Dorothy,Roberts,Unknown,dorothy.roberts485@email.com,+1-316-902-6460,New York,ny,USA,2022-10-30
+CUST00486,Brian,Kim,Female,brian.kim486@email.com,+1-888-690-8774,Detroit,MI,USA,2019-05-26
+CUST00487,Brian,Robinson,,brian.robinson487@email.com,+1-960-257-9537,Minneapolis,MN,USA,2022-05-11
+CUST00488,Brian,Sharma,Other,brian.sharma488@email.com,+1-267-352-5595,Portland,OR,USA,2019-05-08
+CUST00489,Deborah,Lopez,Other,deborah.lopez489@email.com,+1-969-515-6152,San Diego,CA,USA,2019-05-10
+CUST00490,Kenneth,Wilson,Female,kenneth.wilson490@email.com,+1-379-314-7131,Boston,ma,USA,2019-06-03
+CUST00491,Ethan,Martinez,Other,ethan.martinez491@email.com,+1-548-695-9579,Fort Worth,TX,USA,2022-06-25
+CUST00492,Thomas,Wilson,Male,thomas.wilson492@email.com,,Chicago,IL,USA,2020-04-19
+CUST00493,Brian,Robinson,,brian.robinson493@email.com,+1-305-733-6119,Chicago,IL,USA,2019-04-03
+CUST00494,Joshua,Moore,Female,joshua.moore494@email.com,+1-991-651-2927,Nashville,TN,USA,2022-01-21
+CUST00495,Susan,Wilson,Other,susan.wilson495@email.com,+1-762-526-5440,Portland,OR,USA,2020-08-02
+CUST00496,Maria,Brown,Unknown,maria.brown496@email.com,+1-229-682-1826,Dallas,TX,USA,2020-03-09
+CUST00497,Ahmed,Flores,Male,ahmed.flores497@email.com,+1-519-540-4246,Portland,OR,USA,2024-12-25
+CUST00498,Olivia,Miller,Female,olivia.miller498@email.com,+1-517-900-8625,Raleigh,NC,USA,2024-04-11
+CUST00499,Timothy,Sanchez,Unknown,timothy.sanchez499@email.com,+1-916-881-6412,Jacksonville,FL,USA,2022-08-23
+CUST00500,Lisa,Jackson,Male,lisa.jackson500@email.com,+1-818-788-3087,Portland,OR,USA,2024-09-11

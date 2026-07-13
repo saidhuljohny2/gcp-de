@@ -1,0 +1,168 @@
+<mxfile host="app.diagrams.net" modified="2026-07-13T12:00:00.000Z" agent="RetailPulse" version="22.1.0" type="device">
+  <diagram id="system-architecture" name="System Architecture">
+    <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="RetailPulse — Full System Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="400" y="15" width="500" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- GCP Boundary -->
+        <mxCell id="gcp-boundary" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4285F4;strokeWidth=2;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="200" y="70" width="1000" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="gcp-label" value="Google Cloud Platform — retailpulse-project" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;fontStyle=1;fontColor=#4285F4;" vertex="1" parent="1">
+          <mxGeometry x="220" y="75" width="350" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Source Systems -->
+        <mxCell id="source" value="&lt;b&gt;Source Systems&lt;/b&gt;&lt;br&gt;&lt;br&gt;E-Commerce Platform&lt;br&gt;CRM System&lt;br&gt;Payment Gateway&lt;br&gt;&lt;br&gt;&lt;i&gt;Daily CSV Exports&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="300" width="150" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Source to GCS -->
+        <mxCell id="a-source-gcs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=block;endFill=1;" edge="1" parent="1" source="source" target="gcs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-source-gcs-label" value="CSV Export" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="185" y="350" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Cloud Storage -->
+        <mxCell id="gcs" value="&lt;b&gt;Cloud Storage&lt;/b&gt;&lt;br&gt;gs://retailpulse-data-lake&lt;br&gt;&lt;br&gt;raw/&lt;br&gt;├── customers.csv (500)&lt;br&gt;├── products.csv (200)&lt;br&gt;├── orders.csv (3,000)&lt;br&gt;├── order_items.csv (7,000)&lt;br&gt;└── payments.csv (3,000)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="200" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- BigQuery Boundary -->
+        <mxCell id="bq-boundary" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#4285F4;strokeWidth=1;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="230" y="310" width="940" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="bq-label" value="BigQuery" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=14;fontStyle=1;fontColor=#1a73e8;" vertex="1" parent="1">
+          <mxGeometry x="250" y="315" width="100" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- retail_raw -->
+        <mxCell id="ds-raw" value="&lt;b&gt;retail_raw&lt;/b&gt;&lt;br&gt;&lt;br&gt;ext_customers&lt;br&gt;ext_products&lt;br&gt;ext_orders&lt;br&gt;ext_order_items&lt;br&gt;ext_payments&lt;br&gt;&lt;br&gt;&lt;i&gt;External Tables&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="260" y="350" width="150" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- retail_bronze -->
+        <mxCell id="ds-bronze" value="&lt;b&gt;retail_bronze&lt;/b&gt;&lt;br&gt;&lt;br&gt;customers&lt;br&gt;products&lt;br&gt;orders ⊕&lt;br&gt;order_items&lt;br&gt;payments ⊕&lt;br&gt;&lt;br&gt;&lt;i&gt;Partitioned &amp;amp; Clustered&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cd7f32;strokeColor=#8B4513;fontColor=#ffffff;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="450" y="350" width="150" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- retail_silver -->
+        <mxCell id="ds-silver" value="&lt;b&gt;retail_silver&lt;/b&gt;&lt;br&gt;&lt;br&gt;dim_customers&lt;br&gt;dim_products&lt;br&gt;dim_payments&lt;br&gt;fact_orders&lt;br&gt;fact_order_items&lt;br&gt;&lt;br&gt;&lt;i&gt;Star Schema&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#808080;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="640" y="350" width="160" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- retail_gold -->
+        <mxCell id="ds-gold" value="&lt;b&gt;retail_gold&lt;/b&gt;&lt;br&gt;&lt;br&gt;daily_sales&lt;br&gt;monthly_sales&lt;br&gt;customer_lifetime_value&lt;br&gt;top_products&lt;br&gt;executive_kpis&lt;br&gt;+ 6 more tables&lt;br&gt;&lt;br&gt;&lt;i&gt;Views + Materialized Views&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=#DAA520;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="840" y="350" width="180" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows between datasets -->
+        <mxCell id="a-gcs-raw" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#9673a6;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gcs" target="ds-raw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-gcs-raw-label" value="02_external_tables.sql" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="310" width="120" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-raw-bronze" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#8B4513;endArrow=block;endFill=1;" edge="1" parent="1" source="ds-raw" target="ds-bronze">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-raw-bronze-label" value="03_bronze" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#8B4513;" vertex="1" parent="1">
+          <mxGeometry x="400" y="400" width="60" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-bronze-silver" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#808080;endArrow=block;endFill=1;" edge="1" parent="1" source="ds-bronze" target="ds-silver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-bronze-silver-label" value="04_silver" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#808080;" vertex="1" parent="1">
+          <mxGeometry x="595" y="400" width="55" height="15" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-silver-gold" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#DAA520;endArrow=block;endFill=1;" edge="1" parent="1" source="ds-silver" target="ds-gold">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-silver-gold-label" value="05_gold" style="text;html=1;strokeColor=none;fillColor=none;fontSize=9;fontColor=#DAA520;" vertex="1" parent="1">
+          <mxGeometry x="795" y="400" width="50" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- SQL Files Box -->
+        <mxCell id="sql-box" value="&lt;b&gt;SQL Pipeline&lt;/b&gt;&lt;br&gt;&lt;br&gt;01_create_datasets.sql&lt;br&gt;02_external_tables.sql&lt;br&gt;03_bronze_tables.sql&lt;br&gt;04_silver_tables.sql&lt;br&gt;05_gold_tables.sql&lt;br&gt;06_views.sql&lt;br&gt;07_analytics.sql (55 queries)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="530" width="200" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Data Quality Box -->
+        <mxCell id="dq-box" value="&lt;b&gt;Data Quality Rules&lt;/b&gt;&lt;br&gt;&lt;br&gt;DQ-01: Deduplication&lt;br&gt;DQ-05: Date validation&lt;br&gt;DQ-06: State standardization&lt;br&gt;DQ-08: Negative price removal&lt;br&gt;DQ-10: Cancelled order exclusion&lt;br&gt;DQ-11: Referential integrity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="530" width="200" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Optimization Box -->
+        <mxCell id="opt-box" value="&lt;b&gt;Optimization&lt;/b&gt;&lt;br&gt;&lt;br&gt;Partition: orders, payments&lt;br&gt;Cluster: all bronze tables&lt;br&gt;Materialized Views: 2&lt;br&gt;Dry Run: cost estimation&lt;br&gt;Gold pre-aggregation&lt;br&gt;Query cache: 24 hours" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;verticalAlign=top;spacingTop=6;spacingLeft=6;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="530" width="200" height="150" as="geometry" />
+        </mxCell>
+
+        <!-- Looker Studio -->
+        <mxCell id="looker" value="&lt;b&gt;Looker Studio&lt;/b&gt;&lt;br&gt;Executive Dashboard&lt;br&gt;&lt;br&gt;Revenue KPIs&lt;br&gt;Monthly Trend&lt;br&gt;Sales by State&lt;br&gt;Top Products&lt;br&gt;Customer Segments&lt;br&gt;Payment Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=#1a73e8;fontColor=#ffffff;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="350" width="170" height="160" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Gold to Looker -->
+        <mxCell id="a-gold-looker" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=2;strokeColor=#4285F4;endArrow=block;endFill=1;" edge="1" parent="1" source="ds-gold" target="looker">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a-gold-looker-label" value="BigQuery Connector" style="text;html=1;strokeColor=none;fillColor=none;fontSize=10;fontColor=#4285F4;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="400" width="110" height="15" as="geometry" />
+        </mxCell>
+
+        <!-- Stakeholders -->
+        <mxCell id="stakeholders" value="&lt;b&gt;Stakeholders&lt;/b&gt;" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;horizontalStack=0;resizeParent=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="720" width="440" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="sh-exec" value="Executives → Gold KPIs + Dashboard" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;spacingLeft=10;" vertex="1" parent="stakeholders">
+          <mxGeometry y="30" width="440" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sh-analyst" value="Analysts → Silver + Gold + 07_analytics.sql" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;spacingLeft=10;" vertex="1" parent="stakeholders">
+          <mxGeometry y="55" width="440" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="sh-engineer" value="Data Engineers → Raw + Bronze + Pipeline SQL" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;spacingLeft=10;" vertex="1" parent="stakeholders">
+          <mxGeometry y="80" width="440" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- Users -->
+        <mxCell id="users" value="&lt;b&gt;End Users&lt;/b&gt;&lt;br&gt;&lt;br&gt;Executives&lt;br&gt;Marketing&lt;br&gt;Merchandising" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="560" width="130" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Looker to Users -->
+        <mxCell id="a-looker-users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1;strokeColor=#666666;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="looker" target="users">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Legend -->
+        <mxCell id="legend" value="&lt;b&gt;Legend&lt;/b&gt;" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=25;fillColor=none;strokeColor=#999999;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="30" y="70" width="150" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-ext" value="External Table" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="legend">
+          <mxGeometry x="10" y="30" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-native" value="Native Table" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cd7f32;strokeColor=#8B4513;fontColor=#ffffff;fontSize=10;" vertex="1" parent="legend">
+          <mxGeometry x="10" y="55" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-part" value="⊕ = Partitioned" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="legend">
+          <mxGeometry x="10" y="80" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="leg-pipe" value="─── = Data Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=10;" vertex="1" parent="legend">
+          <mxGeometry x="10" y="100" width="130" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

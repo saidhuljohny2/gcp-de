@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net" modified="2026-07-13T12:00:00.000Z" agent="RetailPulse" version="22.1.0" type="device">
+  <diagram id="medallion-architecture" name="Medallion Architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="title" value="RetailPulse — Medallion Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="284" y="20" width="600" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- GCS Landing Zone -->
+        <mxCell id="gcs" value="&lt;b&gt;Landing Zone&lt;/b&gt;&lt;br&gt;Google Cloud Storage&lt;br&gt;&lt;br&gt;gs://retailpulse-data-lake/raw/&lt;br&gt;customers.csv | products.csv&lt;br&gt;orders.csv | order_items.csv&lt;br&gt;payments.csv" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="384" y="80" width="400" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow GCS to Raw -->
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=block;endFill=1;" edge="1" parent="1" source="gcs" target="raw">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1label" value="Register as&#xa;External Tables" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="188" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- RAW Layer -->
+        <mxCell id="raw" value="&lt;b&gt;RAW Layer&lt;/b&gt; — retail_raw&lt;br&gt;&lt;br&gt;ext_customers | ext_products&lt;br&gt;ext_orders | ext_order_items&lt;br&gt;ext_payments&lt;br&gt;&lt;br&gt;&lt;i&gt;Schema defined, data untouched&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="384" y="220" width="400" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Raw to Bronze -->
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=block;endFill=1;" edge="1" parent="1" source="raw" target="bronze">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2label" value="CTAS&#xa;03_bronze_tables.sql" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="338" width="120" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- BRONZE Layer -->
+        <mxCell id="bronze" value="&lt;b&gt;BRONZE Layer&lt;/b&gt; — retail_bronze&lt;br&gt;&lt;br&gt;customers | products | orders&lt;br&gt;order_items | payments&lt;br&gt;&lt;br&gt;&lt;i&gt;Native tables, partitioned &amp;amp; clustered&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ _loaded_at, _source_file metadata&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cd7f32;strokeColor=#8B4513;fontColor=#ffffff;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="384" y="370" width="400" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Bronze to Silver -->
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=block;endFill=1;" edge="1" parent="1" source="bronze" target="silver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3label" value="Transform + DQ&#xa;04_silver_tables.sql" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="498" width="130" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- SILVER Layer -->
+        <mxCell id="silver" value="&lt;b&gt;SILVER Layer&lt;/b&gt; — retail_silver&lt;br&gt;&lt;br&gt;&lt;b&gt;Dimensions:&lt;/b&gt; dim_customers, dim_products, dim_payments&lt;br&gt;&lt;b&gt;Facts:&lt;/b&gt; fact_orders, fact_order_items&lt;br&gt;&lt;br&gt;&lt;i&gt;Star schema, window functions, QUALIFY&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C0C0C0;strokeColor=#808080;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="334" y="530" width="500" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Silver to Gold -->
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;endArrow=block;endFill=1;" edge="1" parent="1" source="silver" target="gold">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow4label" value="Aggregate&#xa;05_gold_tables.sql" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="658" width="120" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- GOLD Layer -->
+        <mxCell id="gold" value="&lt;b&gt;GOLD Layer&lt;/b&gt; — retail_gold&lt;br&gt;&lt;br&gt;daily_sales | monthly_sales | customer_lifetime_value&lt;br&gt;top_products | top_categories | state_wise_sales&lt;br&gt;brand_performance | payment_analysis | executive_kpis&lt;br&gt;&lt;br&gt;&lt;i&gt;Business-ready KPIs + Materialized Views&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD700;strokeColor=#DAA520;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="284" y="690" width="600" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow Gold to Dashboard -->
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#4285F4;endArrow=block;endFill=1;" edge="1" parent="1" source="gold" target="dashboard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Looker Studio -->
+        <mxCell id="dashboard" value="&lt;b&gt;Looker Studio&lt;/b&gt;&lt;br&gt;Executive Dashboard&lt;br&gt;&lt;br&gt;Revenue KPIs | Geo Map&lt;br&gt;Top Products | Segments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;strokeColor=#1a73e8;fontColor=#ffffff;fontSize=12;verticalAlign=top;spacingTop=8;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="384" y="830" width="400" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- Left sidebar: Quality progression -->
+        <mxCell id="quality-label" value="Data Quality" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="30" y="420" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q-raw" value="Unvalidated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q-bronze" value="Raw Copy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q-silver" value="Cleaned" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="560" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q-gold" value="Business-Ready" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="80" y="720" width="100" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Quality arrows -->
+        <mxCell id="qa1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="q-raw" target="q-bronze">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qa2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="q-bronze" target="q-silver">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qa3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="q-silver" target="q-gold">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Right sidebar: Audience -->
+        <mxCell id="audience-label" value="Primary Audience" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontStyle=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="420" width="120" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="a-raw" value="Data Engineers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="900" y="255" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a-bronze" value="Data Engineers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="900" y="415" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a-silver" value="Analysts + Engineers" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="900" y="575" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a-gold" value="Executives + BI" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="900" y="735" width="120" height="20" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

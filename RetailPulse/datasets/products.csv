@@ -1,0 +1,201 @@
+product_id,product_name,category,subcategory,brand,price,cost,launch_date
+PROD00001,PlayTime Smartphones 1,Electronics,Smartphones,FreshMart,62.49,40.11,2020-09-25
+PROD00002,FreshMart Smartphones 2,Electronics,Smartphones,ActiveLife,680.84,276.23,2024-08-17
+PROD00003,PrimeSelect Smartphones 3,Electronics,Smartphones,UrbanEdge,540.21,218.42,2019-12-10
+PROD00004,PureNature Smartphones 4,Electronics,Smartphones,SwiftGear,417.95,332.99,2024-08-22
+PROD00005,StyleHub Smartphones 5,Electronics,Smartphones,HomeEssence,476.87,300.06,2022-07-21
+PROD00006,SwiftGear Laptops 6,Electronics,Laptops,SwiftGear,51.17,39.46,2023-07-18
+PROD00007,ActiveLife Laptops 7,Electronics,Laptops,PureNature,399.83,324.27,2025-02-18
+PROD00008,EcoChoice Laptops 8,Electronics,Laptops,UrbanEdge,881.57,405.87,2024-11-26
+PROD00009,EcoChoice Laptops 9,Electronics,Laptops,GlowBeauty,411.63,291.08,2021-06-01
+PROD00010,ValueMax Laptops 10,Electronics,Laptops,ReadWell,1109.86,459.66,2024-07-14
+PROD00011,FreshMart Tablets 11,Electronics,Tablets,SwiftGear,22.38,9.02,2022-02-21
+PROD00012,TechNova Tablets 12,Electronics,Tablets,SwiftGear,1108.03,451.03,2019-03-26
+PROD00013,ActiveLife Tablets 13,Electronics,Tablets,PrimeSelect,1000.09,431.32,2021-07-27
+PROD00014,FreshMart Tablets 14,Electronics,Tablets,EcoChoice,606.8,357.33,2019-07-24
+PROD00015,PureNature Tablets 15,Electronics,Tablets,FreshMart,163.87,98.17,2019-05-30
+PROD00016,TechNova Accessories 16,Electronics,Accessories,PureNature,89.11,71.47,2022-11-24
+PROD00017,HomeEssence Accessories 17,Electronics,Accessories,FreshMart,650.13,487.61,2024-10-11
+PROD00018,PlayTime Accessories 18,Electronics,Accessories,UrbanEdge,926.99,465.5,2022-04-25
+PROD00019,PrimeSelect Accessories 19,electronics,Accessories,PlayTime,253.38,180.88,2020-08-27
+PROD00020,PureNature Accessories 20,Electronics,Accessories,ReadWell,541.07,357.5,2018-06-05
+PROD00021,StyleHub Audio 21,Electronics,Audio,ValueMax,601.54,286.23,2023-11-27
+PROD00022,LuxCraft Audio 22,Electronics,Audio,UrbanEdge,1218.83,491.87,2024-11-03
+PROD00023,ValueMax Audio 23,Electronics,Audio,EcoChoice,87.21,48.78,2025-02-08
+PROD00024,PrimeSelect Audio 24,Electronics,Audio,ReadWell,525.45,271.9,2018-02-14
+PROD00025,PlayTime Audio 25,Electronics,Audio,ReadWell,436.74,237.09,2021-04-21
+PROD00026,PureNature Men 26,Clothing,Men,GlowBeauty,177.45,148.16,2024-04-27
+PROD00027,PrimeSelect Men 27,Clothing,Men,TechNova,267.78,133.92,2021-04-10
+PROD00028,GlowBeauty Men 28,Clothing,Men,HomeEssence,807.89,405.4,2021-02-12
+PROD00029,GlowBeauty Men 29,Clothing,Men,TechNova,257.12,129.77,2024-10-09
+PROD00030,HomeEssence Men 30,Clothing,Men,ReadWell,178.19,91.43,2020-12-06
+PROD00031,HomeEssence Women 31,Clothing,Women,SwiftGear,576.31,392.35,2018-12-12
+PROD00032,SwiftGear Women 32,Clothing,Women,PlayTime,945.42,483.84,2022-08-19
+PROD00033,PlayTime Women 33,Clothing,Women,HomeEssence,568.38,386.33,2021-11-14
+PROD00034,SwiftGear Women 34,Clothing,Women,HomeEssence,48.06,31.89,2023-05-05
+PROD00035,LuxCraft Women 35,Clothing,Women,ActiveLife,332.61,154.18,2022-05-17
+PROD00036,SwiftGear Kids 36,Clothing,Kids,GlowBeauty,322.92,239.92,2023-01-13
+PROD00037,UrbanEdge Kids 37,Clothing,Kids,TechNova,305.92,194.09,2023-12-17
+PROD00038,FreshMart Kids 38,Clothing,Kids,EcoChoice,782.34,320.52,2021-10-04
+PROD00039,GlowBeauty Kids 39,Clothing,Kids,FreshMart,309.98,138.81,2020-09-17
+PROD00040,ActiveLife Kids 40,Clothing,Kids,EcoChoice,716.63,368.49,2020-01-07
+PROD00041,TechNova Footwear 41,Clothing,Footwear,TechNova,186.37,160.07,2023-11-22
+PROD00042,ActiveLife Footwear 42,Clothing,Footwear,GlowBeauty,98.87,56.43,2018-04-08
+PROD00043,PrimeSelect Footwear 43,Clothing,Footwear,SwiftGear,382.27,311.6,2024-09-21
+PROD00044,StyleHub Footwear 44,Clothing,Footwear,PrimeSelect,675.68,320.85,2025-05-12
+PROD00045,LuxCraft Footwear 45,Clothing,Footwear,PureNature,775.67,383.11,2020-01-25
+PROD00046,PureNature Accessories 46,Clothing,Accessories,PlayTime,232.16,130.4,2021-02-06
+PROD00047,EcoChoice Accessories 47,Clothing,Accessories,ReadWell,804.26,385.83,2018-10-31
+PROD00048,FreshMart Accessories 48,Clothing,Accessories,TechNova,175.58,142.26,2020-12-20
+PROD00049,PureNature Accessories 49,Clothing,Accessories,FreshMart,115.76,93.08,2023-07-09
+PROD00050,FreshMart Accessories 50,Clothing,Accessories,EcoChoice,110.29,58.67,2022-12-14
+PROD00051,StyleHub Furniture 51,Home & Kitchen,Furniture,ValueMax,463.06,359.12,2023-01-01
+PROD00052,EcoChoice Furniture 52,Home & Kitchen,Furniture,PureNature,26.03,14.29,2022-05-19
+PROD00053,PureNature Furniture 53,Home & Kitchen,Furniture,TechNova,286.79,136.89,2023-07-03
+PROD00054,ValueMax Furniture 54,Home & Kitchen,Furniture,LuxCraft,409.72,241.68,2020-07-14
+PROD00055,SwiftGear Furniture 55,Home & Kitchen,Furniture,StyleHub,16.19,6.64,2022-01-10
+PROD00056,TechNova Appliances 56,Home & Kitchen,Appliances,EcoChoice,265.08,170.05,2023-12-30
+PROD00057,SwiftGear Appliances 57,Home & Kitchen,Appliances,LuxCraft,687.72,427.4,2020-04-11
+PROD00058,FreshMart Appliances 58,Home & Kitchen,Appliances,GlowBeauty,111.2,92.43,2019-03-14
+PROD00059,StyleHub Appliances 59,Home & Kitchen,Appliances,PlayTime,518.56,317.16,2019-07-28
+PROD00060,PrimeSelect Appliances 60,Home & Kitchen,Appliances,FreshMart,26.85,22.67,2024-01-24
+PROD00061,SwiftGear Decor 61,Home & Kitchen,Decor,TechNova,590.23,323.49,2018-08-18
+PROD00062,FreshMart Decor 62,Home & Kitchen,Decor,LuxCraft,365.58,172.17,2023-11-13
+PROD00063,SwiftGear Decor 63,Home & Kitchen,Decor,ValueMax,478.95,231.89,2018-10-23
+PROD00064,EcoChoice Decor 64,home & kitchen,Decor,PureNature,31.18,23.25,2018-07-07
+PROD00065,TechNova Decor 65,Home & Kitchen,Decor,TechNova,253.5,125.13,2019-02-03
+PROD00066,PrimeSelect Bedding 66,Home & Kitchen,Bedding,SwiftGear,318.62,230.81,2023-07-30
+PROD00067,StyleHub Bedding 67,Home & Kitchen,Bedding,FreshMart,593.36,299.51,2022-07-05
+PROD00068,PrimeSelect Bedding 68,Home & Kitchen,Bedding,ReadWell,408.36,165.5,2020-05-23
+PROD00069,ReadWell Bedding 69,Home & Kitchen,Bedding,GlowBeauty,747.67,383.29,2022-08-28
+PROD00070,HomeEssence Bedding 70,Home & Kitchen,Bedding,PureNature,145.46,88.19,2019-07-01
+PROD00071,PrimeSelect Storage 71,Home & Kitchen,Storage,HomeEssence,-124.97,54.48,2023-06-18
+PROD00072,PureNature Storage 72,Home & Kitchen,Storage,EcoChoice,52.14,44.96,2021-03-08
+PROD00073,LuxCraft Storage 73,Home & Kitchen,Storage,HomeEssence,472.71,211.03,2025-03-05
+PROD00074,ActiveLife Storage 74,Home & Kitchen,Storage,PrimeSelect,244.58,139.12,2024-09-08
+PROD00075,StyleHub Storage 75,Home & Kitchen,Storage,LuxCraft,171.72,94.1,2022-09-12
+PROD00076,StyleHub Fitness 76,Sports,Fitness,StyleHub,10.66,7.26,2024-01-20
+PROD00077,EcoChoice Fitness 77,Sports,Fitness,GlowBeauty,455.24,256.23,2019-04-07
+PROD00078,PureNature Fitness 78,Sports,Fitness,HomeEssence,828.62,399.32,2018-06-26
+PROD00079,ActiveLife Fitness 79,Sports,Fitness,ReadWell,52.11,31.74,2023-01-31
+PROD00080,PureNature Fitness 80,Sports,Fitness,HomeEssence,56.83,26.44,2023-06-10
+PROD00081,ActiveLife Outdoor 81,Sports,Outdoor,PrimeSelect,323.72,259.88,2022-09-13
+PROD00082,ReadWell Outdoor 82,Sports,Outdoor,StyleHub,213.35,103.38,2019-02-06
+PROD00083,ActiveLife Outdoor 83,Sports,Outdoor,ActiveLife,208.89,122.37,2024-07-24
+PROD00084,HomeEssence Outdoor 84,Sports,Outdoor,PrimeSelect,575.76,244.78,2022-05-06
+PROD00085,ActiveLife Outdoor 85,Sports,Outdoor,GlowBeauty,335.7,189.88,2019-06-06
+PROD00086,GlowBeauty Team Sports 86,Sports,Team Sports,SwiftGear,40.06,20.89,2022-09-10
+PROD00087,PureNature Team Sports 87,Sports,Team Sports,HomeEssence,144.82,89.74,2025-02-26
+PROD00088,PrimeSelect Team Sports 88,Sports,Team Sports,SwiftGear,1130.8,476.62,2022-08-14
+PROD00089,ActiveLife Team Sports 89,Sports,Team Sports,SwiftGear,777.04,429.2,2018-03-01
+PROD00090,ActiveLife Team Sports 90,Sports,Team Sports,FreshMart,785.42,366.36,2024-08-20
+PROD00091,PureNature Cycling 91,sports,Cycling,TechNova,1128.36,473.39,2023-04-12
+PROD00092,FreshMart Cycling 92,Sports,Cycling,PlayTime,673.82,368.07,2019-02-06
+PROD00093,UrbanEdge Cycling 93,Sports,Cycling,ValueMax,337.65,228.96,2020-06-11
+PROD00094,EcoChoice Cycling 94,Sports,Cycling,TechNova,109.52,70.69,2021-06-02
+PROD00095,PrimeSelect Cycling 95,Sports,Cycling,TechNova,150.61,85.09,2023-03-15
+PROD00096,FreshMart Yoga 96,Sports,Yoga,SwiftGear,901.92,387.06,2023-03-17
+PROD00097,EcoChoice Yoga 97,Sports,Yoga,PureNature,407.1,353.43,2023-12-15
+PROD00098,GlowBeauty Yoga 98,Sports,Yoga,PrimeSelect,36.55,21.19,2020-04-28
+PROD00099,PureNature Yoga 99,Sports,Yoga,PureNature,497.31,394.91,2022-01-30
+PROD00100,ReadWell Yoga 100,Sports,Yoga,TechNova,577.83,444.55,2019-12-19
+PROD00101,UrbanEdge Skincare 101,Beauty,Skincare,ActiveLife,684.8,325.85,2021-10-03
+PROD00102,PlayTime Skincare 102,Beauty,Skincare,LuxCraft,160.46,123.12,2020-05-09
+PROD00103,ReadWell Skincare 103,Beauty,Skincare,GlowBeauty,822.59,377.82,2022-09-29
+PROD00104,ReadWell Skincare 104,Beauty,Skincare,UrbanEdge,175.68,142.19,2019-05-18
+PROD00105,SwiftGear Skincare 105,Beauty,Skincare,GlowBeauty,444.1,237.73,2022-02-16
+PROD00106,LuxCraft Makeup 106,Beauty,Makeup,PureNature,972.8,400.95,2023-02-19
+PROD00107,HomeEssence Makeup 107,Beauty,Makeup,StyleHub,80.89,48.22,2021-02-04
+PROD00108,HomeEssence Makeup 108,Beauty,Makeup,UrbanEdge,81.59,60.45,2018-04-03
+PROD00109,UrbanEdge Makeup 109,Beauty,Makeup,PlayTime,369.13,150.12,2022-12-24
+PROD00110,ActiveLife Makeup 110,Beauty,Makeup,SwiftGear,436.43,370.17,2023-10-30
+PROD00111,ReadWell Haircare 111,Beauty,Haircare,LuxCraft,552.86,324.11,2024-08-27
+PROD00112,UrbanEdge Haircare 112,Beauty,Haircare,GlowBeauty,624.27,334.6,2021-06-09
+PROD00113,PlayTime Haircare 113,Beauty,Haircare,GlowBeauty,135.11,90.01,2018-07-13
+PROD00114,HomeEssence Haircare 114,Beauty,Haircare,HomeEssence,120.31,78.43,2021-03-14
+PROD00115,ValueMax Haircare 115,Beauty,Haircare,EcoChoice,132.06,95.23,2019-10-23
+PROD00116,ReadWell Fragrance 116,Beauty,Fragrance,PlayTime,147.99,122.76,2020-01-26
+PROD00117,EcoChoice Fragrance 117,Beauty,Fragrance,ReadWell,224.25,106.55,2023-01-11
+PROD00118,GlowBeauty Fragrance 118,Beauty,Fragrance,TechNova,372.82,272.23,2023-08-08
+PROD00119,PureNature Fragrance 119,Beauty,Fragrance,TechNova,936.38,385.42,2024-02-16
+PROD00120,ValueMax Fragrance 120,Beauty,Fragrance,PureNature,779.32,487.92,2024-06-07
+PROD00121,ValueMax Tools 121,Beauty,Tools,PlayTime,747.1,335.11,2019-04-06
+PROD00122,HomeEssence Tools 122,Beauty,Tools,StyleHub,868.42,367.16,2022-07-04
+PROD00123,ReadWell Tools 123,Beauty,Tools,TechNova,449.69,310.67,2020-03-10
+PROD00124,PureNature Tools 124,Beauty,Tools,ActiveLife,425.98,293.8,2024-01-15
+PROD00125,StyleHub Tools 125,Beauty,Tools,FreshMart,878.21,425.48,2021-07-25
+PROD00126,TechNova Fiction 126,Books,Fiction,ReadWell,558.75,303.57,2022-10-18
+PROD00127,GlowBeauty Fiction 127,Books,Fiction,GlowBeauty,310.77,187.97,2024-04-16
+PROD00128,PlayTime Fiction 128,Books,Fiction,FreshMart,103.13,48.36,2021-03-28
+PROD00129,PureNature Fiction 129,Books,Fiction,PureNature,183.59,86.08,2024-08-02
+PROD00130,GlowBeauty Fiction 130,Books,Fiction,SwiftGear,404.49,300.98,2021-10-05
+PROD00131,LuxCraft Non-Fiction 131,Books,Non-Fiction,TechNova,92.29,37.73,2021-01-24
+PROD00132,ValueMax Non-Fiction 132,Books,Non-Fiction,PureNature,399.42,210.18,2020-02-01
+PROD00133,PlayTime Non-Fiction 133,books,Non-Fiction,SwiftGear,642.47,416.98,2024-07-25
+PROD00134,PlayTime Non-Fiction 134,Books,Non-Fiction,LuxCraft,-296.12,155.44,2020-12-11
+PROD00135,EcoChoice Non-Fiction 135,Books,Non-Fiction,EcoChoice,309.43,153.58,2021-03-24
+PROD00136,ValueMax Children 136,Books,Children,TechNova,383.65,211.49,2021-02-09
+PROD00137,PrimeSelect Children 137,Books,Children,PrimeSelect,612.77,249.06,2022-11-22
+PROD00138,PlayTime Children 138,Books,Children,SwiftGear,868.7,434.83,2023-10-01
+PROD00139,GlowBeauty Children 139,Books,Children,TechNova,431.69,367.81,2023-03-04
+PROD00140,HomeEssence Children 140,Books,Children,ReadWell,586.18,439.77,2021-12-29
+PROD00141,EcoChoice Textbooks 141,Books,Textbooks,UrbanEdge,44.94,29.11,2025-01-16
+PROD00142,LuxCraft Textbooks 142,Books,Textbooks,ReadWell,122.28,95.71,2021-05-18
+PROD00143,ReadWell Textbooks 143,Books,Textbooks,PrimeSelect,291.6,139.37,2019-08-12
+PROD00144,ReadWell Textbooks 144,Books,Textbooks,FreshMart,21.05,11.38,2019-10-30
+PROD00145,ActiveLife Textbooks 145,Books,Textbooks,LuxCraft,75.68,55.7,2024-11-17
+PROD00146,SwiftGear Comics 146,Books,Comics,UrbanEdge,843.74,346.38,2019-04-12
+PROD00147,StyleHub Comics 147,Books,Comics,PureNature,-504.99,211.59,2021-11-27
+PROD00148,SwiftGear Comics 148,Books,Comics,PrimeSelect,261.05,159.23,2021-11-02
+PROD00149,ValueMax Comics 149,Books,Comics,ActiveLife,140.89,90.24,2019-08-07
+PROD00150,ActiveLife Comics 150,Books,Comics,StyleHub,540.84,345.58,2019-04-03
+PROD00151,LuxCraft Snacks 151,Grocery,Snacks,ActiveLife,95.47,43.48,2025-05-26
+PROD00152,StyleHub Snacks 152,Grocery,Snacks,TechNova,318.78,259.17,2018-02-12
+PROD00153,PureNature Snacks 153,Grocery,Snacks,PrimeSelect,835.05,378.5,2020-01-27
+PROD00154,HomeEssence Snacks 154,Grocery,Snacks,GlowBeauty,400.8,336.95,2021-11-25
+PROD00155,LuxCraft Snacks 155,Grocery,Snacks,ActiveLife,413.28,179.34,2018-10-07
+PROD00156,TechNova Beverages 156,Grocery,Beverages,ValueMax,104.36,54.06,2021-02-28
+PROD00157,TechNova Beverages 157,Grocery,Beverages,StyleHub,195.18,90.03,2023-08-28
+PROD00158,ValueMax Beverages 158,Grocery,Beverages,PlayTime,763.61,426.39,2019-03-16
+PROD00159,FreshMart Beverages 159,Grocery,Beverages,UrbanEdge,153.97,94.52,2019-04-08
+PROD00160,PlayTime Beverages 160,Grocery,Beverages,HomeEssence,601.22,381.9,2022-01-19
+PROD00161,TechNova Pantry 161,Grocery,Pantry,PlayTime,673.05,353.84,2021-03-07
+PROD00162,EcoChoice Pantry 162,Grocery,Pantry,PlayTime,495.63,231.19,2022-07-27
+PROD00163,ActiveLife Pantry 163,Grocery,Pantry,PureNature,343.04,148.84,2023-05-03
+PROD00164,TechNova Pantry 164,Grocery,Pantry,PlayTime,773.39,469.85,2022-06-12
+PROD00165,StyleHub Pantry 165,Grocery,Pantry,FreshMart,452.34,221.84,2024-08-15
+PROD00166,PureNature Frozen 166,Grocery,Frozen,StyleHub,1051.59,488.9,2020-03-26
+PROD00167,FreshMart Frozen 167,Grocery,Frozen,SwiftGear,337.16,172.62,2023-08-07
+PROD00168,PrimeSelect Frozen 168,Grocery,Frozen,LuxCraft,301.92,142.87,2025-03-22
+PROD00169,EcoChoice Frozen 169,Grocery,Frozen,FreshMart,769.54,471.9,2023-09-26
+PROD00170,StyleHub Frozen 170,Grocery,Frozen,PlayTime,312.82,143.05,2025-01-17
+PROD00171,ValueMax Organic 171,Grocery,Organic,StyleHub,561.13,471.49,2018-04-20
+PROD00172,EcoChoice Organic 172,Grocery,Organic,GlowBeauty,810.25,486.18,2019-01-30
+PROD00173,UrbanEdge Organic 173,Grocery,Organic,LuxCraft,778.75,381.28,2021-04-17
+PROD00174,GlowBeauty Organic 174,Grocery,Organic,LuxCraft,602.87,332.74,2024-02-17
+PROD00175,FreshMart Organic 175,Grocery,Organic,StyleHub,29.99,13.75,2021-07-12
+PROD00176,TechNova Action Figures 176,toys,Action Figures,UrbanEdge,746.46,427.17,2021-05-26
+PROD00177,FreshMart Action Figures 177,Toys,Action Figures,ValueMax,607.52,442.93,2019-03-25
+PROD00178,UrbanEdge Action Figures 178,Toys,Action Figures,PrimeSelect,519.35,286.58,2024-04-21
+PROD00179,FreshMart Action Figures 179,Toys,Action Figures,PrimeSelect,784.78,427.9,2024-12-01
+PROD00180,GlowBeauty Action Figures 180,Toys,Action Figures,TechNova,742.5,339.86,2019-06-10
+PROD00181,ValueMax Board Games 181,Toys,Board Games,LuxCraft,679.65,419.28,2021-10-29
+PROD00182,ReadWell Board Games 182,Toys,Board Games,TechNova,334.16,193.38,2020-10-11
+PROD00183,StyleHub Board Games 183,Toys,Board Games,StyleHub,190.35,121.14,2019-04-14
+PROD00184,ReadWell Board Games 184,toys,Board Games,EcoChoice,202.51,172.11,2024-05-15
+PROD00185,TechNova Board Games 185,Toys,Board Games,PrimeSelect,446.51,259.81,2021-07-20
+PROD00186,PrimeSelect Educational 186,Toys,Educational,PlayTime,321.93,191.98,2020-04-23
+PROD00187,LuxCraft Educational 187,Toys,Educational,HomeEssence,313.26,171.3,2022-01-28
+PROD00188,EcoChoice Educational 188,Toys,Educational,LuxCraft,689.67,484.87,2024-01-04
+PROD00189,GlowBeauty Educational 189,Toys,Educational,FreshMart,167.34,110.97,2025-01-02
+PROD00190,SwiftGear Educational 190,Toys,Educational,PrimeSelect,474.91,372.73,2018-10-03
+PROD00191,FreshMart Outdoor Toys 191,Toys,Outdoor Toys,LuxCraft,532.79,285.38,2021-05-21
+PROD00192,EcoChoice Outdoor Toys 192,Toys,Outdoor Toys,ActiveLife,396.18,254.8,2020-10-26
+PROD00193,LuxCraft Outdoor Toys 193,Toys,Outdoor Toys,PureNature,-553.86,314.36,2023-10-16
+PROD00194,ActiveLife Outdoor Toys 194,Toys,Outdoor Toys,SwiftGear,833.29,432.04,2023-03-30
+PROD00195,LuxCraft Outdoor Toys 195,Toys,Outdoor Toys,LuxCraft,276.8,137.63,2024-05-07
+PROD00196,ActiveLife Puzzles 196,Toys,Puzzles,HomeEssence,448.85,364.67,2021-05-14
+PROD00197,SwiftGear Puzzles 197,Toys,Puzzles,StyleHub,720.46,422.84,2022-08-17
+PROD00198,HomeEssence Puzzles 198,Toys,Puzzles,PrimeSelect,210.84,137.13,2020-09-03
+PROD00199,ActiveLife Puzzles 199,Toys,Puzzles,GlowBeauty,86.25,61.21,2024-04-12
+PROD00200,PureNature Puzzles 200,toys,Puzzles,HomeEssence,852.45,495.69,2018-04-30
