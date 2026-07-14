@@ -26,7 +26,7 @@
 --   • Standardize state to 2-letter code
 --   • Default missing country to 'USA'
 -- =============================================================================
-CREATE OR REPLACE TABLE `retailpulse-project.retail_silver.dim_customers`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_silver.dim_customers`
 CLUSTER BY customer_id, state
 AS
 WITH state_mapping AS (
@@ -62,7 +62,7 @@ cleaned AS (
     COALESCE(NULLIF(TRIM(country), ''), 'USA') AS country,
     SAFE.PARSE_DATE('%Y-%m-%d', signup_date) AS signup_date,
     _loaded_at
-  FROM `retailpulse-project.retail_bronze.customers` c
+  FROM `gcp-evening-batch-501811.retail_bronze.customers` c
   LEFT JOIN state_mapping sm ON UPPER(TRIM(c.state)) = sm.state_full
 ),
 deduped AS (
@@ -99,7 +99,7 @@ WHERE rn = 1;
 --   • Remove products with negative or zero price
 --   • Deduplicate by product_id
 -- =============================================================================
-CREATE OR REPLACE TABLE `retailpulse-project.retail_silver.dim_products`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_silver.dim_products`
 CLUSTER BY product_id, category
 AS
 WITH cleaned AS (
@@ -114,7 +114,7 @@ WITH cleaned AS (
     SAFE.PARSE_DATE('%Y-%m-%d', launch_date) AS launch_date,
     ROUND(SAFE_DIVIDE(price - cost, NULLIF(price, 0)) * 100, 2) AS margin_pct,
     _loaded_at
-  FROM `retailpulse-project.retail_bronze.products`
+  FROM `gcp-evening-batch-501811.retail_bronze.products`
   WHERE price > 0 AND cost >= 0
 ),
 deduped AS (
@@ -147,7 +147,7 @@ WHERE rn = 1;
 --   • Remove duplicate payments per order (keep first successful)
 --   • Valid payment_status values only
 -- =============================================================================
-CREATE OR REPLACE TABLE `retailpulse-project.retail_silver.dim_payments`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_silver.dim_payments`
 PARTITION BY payment_date
 CLUSTER BY order_id, payment_method
 AS
@@ -175,7 +175,7 @@ WITH cleaned AS (
       PARTITION BY order_id ORDER BY payment_date
       ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
     ) AS last_payment_status
-  FROM `retailpulse-project.retail_bronze.payments`
+  FROM `gcp-evening-batch-501811.retail_bronze.payments`
   WHERE payment_id IS NOT NULL
 )
 SELECT
@@ -202,7 +202,7 @@ QUALIFY ROW_NUMBER() OVER (PARTITION BY payment_id ORDER BY _loaded_at DESC) = 1
 --   • Standardize shipping_state
 --   • Deduplicate orders
 -- =============================================================================
-CREATE OR REPLACE TABLE `retailpulse-project.retail_silver.fact_orders`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_silver.fact_orders`
 PARTITION BY order_date
 CLUSTER BY customer_id, status
 AS
@@ -220,7 +220,7 @@ WITH state_mapping AS (
   SELECT 'MISSOURI', 'MO' UNION ALL SELECT 'INDIANA', 'IN'
 ),
 valid_customers AS (
-  SELECT customer_id FROM `retailpulse-project.retail_silver.dim_customers`
+  SELECT customer_id FROM `gcp-evening-batch-501811.retail_silver.dim_customers`
 ),
 order_line_revenue AS (
   SELECT
@@ -228,8 +228,8 @@ order_line_revenue AS (
     SUM(oi.quantity * oi.unit_price) AS line_revenue,
     SUM(oi.quantity) AS total_units,
     COUNT(DISTINCT oi.product_id) AS distinct_products
-  FROM `retailpulse-project.retail_bronze.order_items` oi
-  INNER JOIN `retailpulse-project.retail_silver.dim_products` p ON oi.product_id = p.product_id
+  FROM `gcp-evening-batch-501811.retail_bronze.order_items` oi
+  INNER JOIN `gcp-evening-batch-501811.retail_silver.dim_products` p ON oi.product_id = p.product_id
   GROUP BY oi.order_id
 ),
 cleaned AS (
@@ -255,7 +255,7 @@ cleaned AS (
     CASE WHEN UPPER(TRIM(o.status)) = 'COMPLETED' THEN TRUE ELSE FALSE END AS is_completed,
     CASE WHEN UPPER(TRIM(o.status)) IN ('COMPLETED', 'RETURNED') THEN TRUE ELSE FALSE END AS is_revenue_eligible,
     o._loaded_at
-  FROM `retailpulse-project.retail_bronze.orders` o
+  FROM `gcp-evening-batch-501811.retail_bronze.orders` o
   LEFT JOIN valid_customers vc ON o.customer_id = vc.customer_id
   LEFT JOIN state_mapping sm ON UPPER(TRIM(o.shipping_state)) = sm.state_full
   LEFT JOIN order_line_revenue olr ON o.order_id = olr.order_id
@@ -313,7 +313,7 @@ WHERE rn = 1;
 --   • Valid product_id only (exclude missing products)
 --   • Join to valid orders
 -- =============================================================================
-CREATE OR REPLACE TABLE `retailpulse-project.retail_silver.fact_order_items`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_silver.fact_order_items`
 CLUSTER BY order_id, product_id
 AS
 WITH cleaned AS (
@@ -331,9 +331,9 @@ WITH cleaned AS (
     p.category,
     p.brand,
     ROW_NUMBER() OVER (PARTITION BY oi.order_item_id ORDER BY oi._loaded_at DESC) AS rn
-  FROM `retailpulse-project.retail_bronze.order_items` oi
-  INNER JOIN `retailpulse-project.retail_silver.fact_orders` fo ON oi.order_id = fo.order_id
-  INNER JOIN `retailpulse-project.retail_silver.dim_products` p ON oi.product_id = p.product_id
+  FROM `gcp-evening-batch-501811.retail_bronze.order_items` oi
+  INNER JOIN `gcp-evening-batch-501811.retail_silver.fact_orders` fo ON oi.order_id = fo.order_id
+  INNER JOIN `gcp-evening-batch-501811.retail_silver.dim_products` p ON oi.product_id = p.product_id
 )
 SELECT
   order_item_id,
@@ -358,15 +358,15 @@ WHERE rn = 1;
 /*
 SELECT 'Invalid customers in orders' AS check_name,
   COUNT(*) AS issue_count
-FROM `retailpulse-project.retail_silver.fact_orders`
+FROM `gcp-evening-batch-501811.retail_silver.fact_orders`
 WHERE is_valid_customer = FALSE
 
 UNION ALL
 SELECT 'Negative order amounts',
-  COUNT(*) FROM `retailpulse-project.retail_silver.fact_orders` WHERE is_valid_amount = FALSE
+  COUNT(*) FROM `gcp-evening-batch-501811.retail_silver.fact_orders` WHERE is_valid_amount = FALSE
 
 UNION ALL
 SELECT 'Duplicate payments removed',
-  (SELECT COUNT(*) FROM `retailpulse-project.retail_bronze.payments`) -
-  (SELECT COUNT(*) FROM `retailpulse-project.retail_silver.dim_payments`);
+  (SELECT COUNT(*) FROM `gcp-evening-batch-501811.retail_bronze.payments`) -
+  (SELECT COUNT(*) FROM `gcp-evening-batch-501811.retail_silver.dim_payments`);
 */

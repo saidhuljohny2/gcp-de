@@ -16,7 +16,7 @@
 -- BRONZE: customers
 -- Small dimension — no partitioning needed; cluster by customer_id
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE TABLE `retailpulse-project.retail_bronze.customers`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_bronze.customers`
 CLUSTER BY customer_id
 AS
 SELECT
@@ -31,13 +31,13 @@ SELECT
   country,
   signup_date,
   CURRENT_TIMESTAMP() AS _loaded_at,
-  'gs://retailpulse-data-lake/raw/customers.csv' AS _source_file
-FROM `retailpulse-project.retail_raw.ext_customers`;
+  'gs://test-bkt-20261525/retail/customers.csv' AS _source_file
+FROM `gcp-evening-batch-501811.retail_raw.ext_customers`;
 
 -- -----------------------------------------------------------------------------
 -- BRONZE: products
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE TABLE `retailpulse-project.retail_bronze.products`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_bronze.products`
 CLUSTER BY product_id, category
 AS
 SELECT
@@ -50,15 +50,15 @@ SELECT
   cost,
   launch_date,
   CURRENT_TIMESTAMP() AS _loaded_at,
-  'gs://retailpulse-data-lake/raw/products.csv' AS _source_file
-FROM `retailpulse-project.retail_raw.ext_products`;
+  'gs://test-bkt-20261525/retail/products.csv' AS _source_file
+FROM `gcp-evening-batch-501811.retail_raw.ext_products`;
 
 -- -----------------------------------------------------------------------------
 -- BRONZE: orders
 -- PARTITIONED by order_date, CLUSTERED by customer_id
 -- This is the primary cost optimization pattern for fact tables
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE TABLE `retailpulse-project.retail_bronze.orders`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_bronze.orders`
 PARTITION BY order_date
 CLUSTER BY customer_id, status
 AS
@@ -73,14 +73,14 @@ SELECT
   tax,
   total_amount,
   CURRENT_TIMESTAMP() AS _loaded_at,
-  'gs://retailpulse-data-lake/raw/orders.csv' AS _source_file
-FROM `retailpulse-project.retail_raw.ext_orders`;
+  'gs://test-bkt-20261525/retail/orders.csv' AS _source_file
+FROM `gcp-evening-batch-501811.retail_raw.ext_orders`;
 
 -- -----------------------------------------------------------------------------
 -- BRONZE: order_items
 -- Cluster by order_id and product_id for join performance
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE TABLE `retailpulse-project.retail_bronze.order_items`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_bronze.order_items`
 CLUSTER BY order_id, product_id
 AS
 SELECT
@@ -90,14 +90,14 @@ SELECT
   quantity,
   unit_price,
   CURRENT_TIMESTAMP() AS _loaded_at,
-  'gs://retailpulse-data-lake/raw/order_items.csv' AS _source_file
-FROM `retailpulse-project.retail_raw.ext_order_items`;
+  'gs://test-bkt-20261525/retail/order_items.csv' AS _source_file
+FROM `gcp-evening-batch-501811.retail_raw.ext_order_items`;
 
 -- -----------------------------------------------------------------------------
 -- BRONZE: payments
 -- Partition by payment_date for time-range analytics
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE TABLE `retailpulse-project.retail_bronze.payments`
+CREATE OR REPLACE TABLE `gcp-evening-batch-501811.retail_bronze.payments`
 PARTITION BY payment_date
 CLUSTER BY order_id, payment_method
 AS
@@ -108,15 +108,15 @@ SELECT
   payment_status,
   SAFE.PARSE_DATE('%Y-%m-%d', payment_date) AS payment_date,
   CURRENT_TIMESTAMP() AS _loaded_at,
-  'gs://retailpulse-data-lake/raw/payments.csv' AS _source_file
-FROM `retailpulse-project.retail_raw.ext_payments`;
+  'gs://test-bkt-20261525/retail/payments.csv' AS _source_file
+FROM `gcp-evening-batch-501811.retail_raw.ext_payments`;
 
 -- =============================================================================
 -- TABLE EXPIRATION EXAMPLE (optional — for dev/staging environments)
 -- Uncomment to auto-delete bronze staging tables after 30 days
 -- =============================================================================
 /*
-ALTER TABLE `retailpulse-project.retail_bronze.orders`
+ALTER TABLE `gcp-evening-batch-501811.retail_bronze.orders`
 SET OPTIONS (expiration_timestamp = TIMESTAMP_ADD(CURRENT_TIMESTAMP(), INTERVAL 30 DAY));
 */
 
@@ -130,7 +130,7 @@ SELECT
   clustering_fields,
   total_rows,
   ROUND(size_bytes / POW(1024, 2), 2) AS size_mb
-FROM `retailpulse-project.retail_bronze.INFORMATION_SCHEMA.TABLES`
+FROM `gcp-evening-batch-501811.retail_bronze.INFORMATION_SCHEMA.TABLES`
 WHERE table_type = 'BASE TABLE'
 ORDER BY table_name;
 */
@@ -140,7 +140,7 @@ ORDER BY table_name;
 -- Append new records using INSERT INTO ... SELECT with watermark filter
 -- =============================================================================
 /*
-INSERT INTO `retailpulse-project.retail_bronze.orders`
-SELECT ... FROM `retailpulse-project.retail_raw.ext_orders`
-WHERE order_date > (SELECT MAX(order_date) FROM `retailpulse-project.retail_bronze.orders`);
+INSERT INTO `gcp-evening-batch-501811.retail_bronze.orders`
+SELECT ... FROM `gcp-evening-batch-501811.retail_raw.ext_orders`
+WHERE order_date > (SELECT MAX(order_date) FROM `gcp-evening-batch-501811.retail_bronze.orders`);
 */

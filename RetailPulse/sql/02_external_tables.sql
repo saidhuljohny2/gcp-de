@@ -36,12 +36,12 @@
 -- =============================================================================
 
 -- GCS bucket path — UPDATE THIS
--- Default pattern: gs://retailpulse-data-lake/raw/{table_name}.csv
+-- Default pattern: gs://test-bkt-20261525/retail/{table_name}.csv
 
 -- -----------------------------------------------------------------------------
 -- EXTERNAL TABLE: customers
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_customers`
+CREATE OR REPLACE EXTERNAL TABLE `gcp-evening-batch-501811.retail_raw.ext_customers`
 (
   customer_id   STRING,
   first_name    STRING,
@@ -56,7 +56,7 @@ CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_customers`
 )
 OPTIONS (
   format = 'CSV',
-  uris = ['gs://retailpulse-data-lake/raw/customers.csv'],
+  uris = ['gs://test-bkt-20261525/retail/customers.csv'],
   skip_leading_rows = 1,
   allow_quoted_newlines = TRUE,
   allow_jagged_rows = FALSE
@@ -65,7 +65,7 @@ OPTIONS (
 -- -----------------------------------------------------------------------------
 -- EXTERNAL TABLE: products
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_products`
+CREATE OR REPLACE EXTERNAL TABLE `gcp-evening-batch-501811.retail_raw.ext_products`
 (
   product_id     STRING,
   product_name   STRING,
@@ -78,14 +78,14 @@ CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_products`
 )
 OPTIONS (
   format = 'CSV',
-  uris = ['gs://retailpulse-data-lake/raw/products.csv'],
+  uris = ['gs://test-bkt-20261525/retail/products.csv'],
   skip_leading_rows = 1
 );
 
 -- -----------------------------------------------------------------------------
 -- EXTERNAL TABLE: orders
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_orders`
+CREATE OR REPLACE EXTERNAL TABLE `gcp-evening-batch-501811.retail_raw.ext_orders`
 (
   order_id         STRING,
   customer_id      STRING,
@@ -99,14 +99,14 @@ CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_orders`
 )
 OPTIONS (
   format = 'CSV',
-  uris = ['gs://retailpulse-data-lake/raw/orders.csv'],
+  uris = ['gs://test-bkt-20261525/retail/orders.csv'],
   skip_leading_rows = 1
 );
 
 -- -----------------------------------------------------------------------------
 -- EXTERNAL TABLE: order_items
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_order_items`
+CREATE OR REPLACE EXTERNAL TABLE `gcp-evening-batch-501811.retail_raw.ext_order_items`
 (
   order_item_id  STRING,
   order_id       STRING,
@@ -116,14 +116,14 @@ CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_order_items
 )
 OPTIONS (
   format = 'CSV',
-  uris = ['gs://retailpulse-data-lake/raw/order_items.csv'],
+  uris = ['gs://test-bkt-20261525/retail/order_items.csv'],
   skip_leading_rows = 1
 );
 
 -- -----------------------------------------------------------------------------
 -- EXTERNAL TABLE: payments
 -- -----------------------------------------------------------------------------
-CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_payments`
+CREATE OR REPLACE EXTERNAL TABLE `gcp-evening-batch-501811.retail_raw.ext_payments`
 (
   payment_id       STRING,
   order_id         STRING,
@@ -133,7 +133,7 @@ CREATE OR REPLACE EXTERNAL TABLE `retailpulse-project.retail_raw.ext_payments`
 )
 OPTIONS (
   format = 'CSV',
-  uris = ['gs://retailpulse-data-lake/raw/payments.csv'],
+  uris = ['gs://test-bkt-20261525/retail/payments.csv'],
   skip_leading_rows = 1
 );
 
@@ -141,15 +141,15 @@ OPTIONS (
 -- VALIDATION: Row counts from external tables
 -- =============================================================================
 /*
-SELECT 'customers'    AS source_table, COUNT(*) AS row_count FROM `retailpulse-project.retail_raw.ext_customers`
+SELECT 'customers'    AS source_table, COUNT(*) AS row_count FROM `gcp-evening-batch-501811.retail_raw.ext_customers`
 UNION ALL
-SELECT 'products',     COUNT(*) FROM `retailpulse-project.retail_raw.ext_products`
+SELECT 'products',     COUNT(*) FROM `gcp-evening-batch-501811.retail_raw.ext_products`
 UNION ALL
-SELECT 'orders',       COUNT(*) FROM `retailpulse-project.retail_raw.ext_orders`
+SELECT 'orders',       COUNT(*) FROM `gcp-evening-batch-501811.retail_raw.ext_orders`
 UNION ALL
-SELECT 'order_items',  COUNT(*) FROM `retailpulse-project.retail_raw.ext_order_items`
+SELECT 'order_items',  COUNT(*) FROM `gcp-evening-batch-501811.retail_raw.ext_order_items`
 UNION ALL
-SELECT 'payments',     COUNT(*) FROM `retailpulse-project.retail_raw.ext_payments`;
+SELECT 'payments',     COUNT(*) FROM `gcp-evening-batch-501811.retail_raw.ext_payments`;
 */
 
 -- =============================================================================
@@ -157,6 +157,6 @@ SELECT 'payments',     COUNT(*) FROM `retailpulse-project.retail_raw.ext_payment
 -- =============================================================================
 /*
 bq query --use_legacy_sql=false --dry_run '
-SELECT COUNT(*) FROM `retailpulse-project.retail_raw.ext_orders`
+SELECT COUNT(*) FROM `gcp-evening-batch-501811.retail_raw.ext_orders`
 ';
 */
