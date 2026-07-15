@@ -1,0 +1,3 @@
+input_path: data/orders.csv
+output_path: data/outbox/pipeline_orders.parquet
+log_level: INFO

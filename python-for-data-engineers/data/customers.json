@@ -1,0 +1,9 @@
+[
+  {"customer_id": "C001", "name": "  Alice Smith  ", "email": "ALICE@EXAMPLE.COM", "country": "US"},
+  {"customer_id": "C002", "name": "Bob Jones", "email": "bob@example.com", "country": "UK"},
+  {"customer_id": "C003", "name": "Carol Lee", "email": "carol@example.com", "country": "US"},
+  {"customer_id": "C004", "name": "Dan Wu", "email": "dan@example.com", "country": "SG"},
+  {"customer_id": "C005", "name": "Eve Park", "email": null, "country": "KR"},
+  {"customer_id": "C006", "name": "Frank Miller", "email": "frank@example.com", "country": "US"},
+  {"customer_id": "C007", "name": "Grace Kim", "email": "grace@example.com", "country": "KR"}
+]

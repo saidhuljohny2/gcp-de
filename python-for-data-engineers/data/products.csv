@@ -1,0 +1,7 @@
+product_id,product_name,category,unit_cost
+P100,Widget A,Hardware,12.00
+P101,Gadget B,Hardware,45.00
+P102,Cable C,Accessories,3.50
+P103,Service Plan,Software,0.00
+P104,Enterprise Kit,Hardware,120.00
+P105,Adapter D,Accessories,8.00

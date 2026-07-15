@@ -1,0 +1,28 @@
+# Core data stack
+pandas>=2.2.0
+numpy>=1.26.0
+pyarrow>=15.0.0
+
+# APIs & HTTP
+requests>=2.31.0
+httpx>=0.27.0
+
+# Databases
+sqlalchemy>=2.0.0
+
+# Pipeline & quality
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+pytest>=8.0.0
+great-expectations>=0.18.0
+
+# Notebooks (optional)
+jupyterlab>=4.0.0
+ipykernel>=6.29.0
+
+# Slide generation
+python-pptx>=0.6.23
+
+# Dev tools
+black>=24.0.0
+ruff>=0.3.0

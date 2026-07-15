@@ -1,0 +1,9 @@
+{
+  "page": 2,
+  "total_pages": 2,
+  "products": [
+    {"sku": "P103", "category": "Software", "in_stock": true},
+    {"sku": "P104", "category": "Hardware", "in_stock": true},
+    {"sku": "P105", "category": "Accessories", "in_stock": true}
+  ]
+}
